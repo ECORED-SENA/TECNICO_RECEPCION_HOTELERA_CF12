@@ -70,4 +70,10 @@ body
     filter: drop-shadow(8px 1px 1px rgba(0,0,0,.19))
 .curso-main-container > .container
     overflow-x: clip !important
+.tarjeta.credito a
+  color: initial !important
+a[href="#contenidos"]
+  color: initial !important
+.barra-avance__boton--regresar:hover span,.barra-avance__boton--regresar:focus span
+  color: #ffffff !important
 </style>

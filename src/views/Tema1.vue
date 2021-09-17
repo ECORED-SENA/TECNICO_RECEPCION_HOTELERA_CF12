@@ -5,7 +5,7 @@
     .titulo-principal
       .titulo-principal__numero
         span 1
-      h1 Check out
+      h1 #[em Check out]
 
     .bloque-texto-a.color-primario.p-4.p-md-5.mt-5.caja_flotante(data-aos="fade-left")
       .row.m-0.align-items-center.justify-content-between
@@ -29,11 +29,11 @@
     br
     br
     .titulo-segundo.mt-5
-      h2#t_1_1 1.1  Late Check out
+      h2#t_1_1 1.1  #[em Late Check out]
 
-    p(data-aos="fade-up") El Late Check out se presenta cuando el huésped solicita dejar la habitación más tarde de lo establecido. Este es un servicio cuya demanda está en aumento en ciertos destinos, pues ofrece nuevas posibilidades a la hora de organizar el viaje y con ello, se permite al cliente dejar tarde la habitación: a las dos de la tarde (2:00 p. m.) o incluso a las seis (6:00 p. m.), según el caso. Esto da nuevas oportunidades a los clientes dependiendo de su motivo de viaje, así, unos podrán disfrutar de su última noche en el hotel y no tener que madrugar, otros podrán aprovechar la mañana tranquilamente sin tener que estar pendientes de la hora de salida.
+    p(data-aos="fade-up") El #[em Late Check out] se presenta cuando el huésped solicita dejar la habitación más tarde de lo establecido. Este es un servicio cuya demanda está en aumento en ciertos destinos, pues ofrece nuevas posibilidades a la hora de organizar el viaje y con ello, se permite al cliente dejar tarde la habitación: a las dos de la tarde (2:00 p. m.) o incluso a las seis (6:00 p. m.), según el caso. Esto da nuevas oportunidades a los clientes dependiendo de su motivo de viaje, así, unos podrán disfrutar de su última noche en el hotel y no tener que madrugar, otros podrán aprovechar la mañana tranquilamente sin tener que estar pendientes de la hora de salida.
 
-    p.mt-4(data-aos="fade-up") También es un servicio muy útil para clientes que tengan una reunión por la mañana del día de Check out, estos podrán dejar sus maletas en la habitación y, después de la reunión, volver al hotel para darse una ducha o reposar un rato antes de salir; este servicio se ofrece, según disponibilidad y puede conllevar un costo. El Early check-in (registro antes de la hora) es una práctica menos extendida pero que también existe.
+    p.mt-4(data-aos="fade-up") También es un servicio muy útil para clientes que tengan una reunión por la mañana del día de #[em Check out], estos podrán dejar sus maletas en la habitación y, después de la reunión, volver al hotel para darse una ducha o reposar un rato antes de salir; este servicio se ofrece, según disponibilidad y puede conllevar un costo. El #[em Early check-in] (registro antes de la hora) es una práctica menos extendida pero que también existe.
 
     br
     br
@@ -53,7 +53,7 @@
     .tarjeta-avatar-b.mb-5
         img.image_floating(src='@/assets/curso/tema1/4.svg' alt='' data-aos="fade-left")
         .tarjeta.caja_flotante(style="background-color: #FFF1DB;")
-          .p-5(data-aos="fade-up") También conocidas como Early Departure, son aquellas reservas que no completan el periodo de estadía planteado inicialmente, dejando el hotel antes de lo previsto. En muchos establecimientos, cuando esto se anuncia posterior a la hora fijada como límite de Check out, se realiza un cobro que va entre el 50% y el 100% del valor de la noche, dependiendo de la política fijada, la cual depende, básicamente, de la demanda y la posibilidad de ocupar esa habitación que va a quedar disponible.
+          .p-5(data-aos="fade-up") También conocidas como Early Departure, son aquellas reservas que no completan el periodo de estadía planteado inicialmente, dejando el hotel antes de lo previsto. En muchos establecimientos, cuando esto se anuncia posterior a la hora fijada como límite de #[em Check out], se realiza un cobro que va entre el 50 % y el 100 % del valor de la noche, dependiendo de la política fijada, la cual depende, básicamente, de la demanda y la posibilidad de ocupar esa habitación que va a quedar disponible.
 
 
 

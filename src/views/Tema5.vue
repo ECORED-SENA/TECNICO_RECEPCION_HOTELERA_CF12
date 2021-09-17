@@ -26,7 +26,8 @@
           .row.mt-4
             .col-md-5(style="place-self:end;")
               span.contenedor__numero(style="background-color:#111E61 !important;color:#fff !important;") 2
-              p.mt-3(data-aos="fade-up") En primer lugar, como cajero imprima un reporte, organizado por formas de pago, de lo recibido en el turno.
+              p.mt-3(data-aos="fade-up") Organiza la documentación: facturas, recibos de caja, comprobantes de cambio de moneda y en general cualquier soporte de movimientos que hayan afectado el movimiento de efectivo.
+
             .col-md-7(style="place-self:start")
               figure.text-center
                 img.image_floating(src="@/assets/curso/tema5/2.svg" data-aos="fade-up" style="display:inline;max-width:100px;")
@@ -80,7 +81,7 @@
         .row.mt-4
           .col-md-5(style="place-self:end;")
             span.contenedor__numero 7
-            p.mt-3(data-aos="fade-up") Una vez este seguro de que el movimiento esta correcto, haga el cierre en el sistema PMS y adjunte los reportes generados al movimiento. Luego deposite el sobre de remisión en la caja, esto se hace en presencia de un testigo. 
+            p.mt-3(data-aos="fade-up") Una vez esté seguro de que el movimiento está correcto, haga el cierre en el sistema PMS y adjunte los reportes generados al movimiento. Luego deposite el sobre de remisión en la caja, esto se hace en presencia de un testigo. 
           .col-md-7(style="place-self:start")
             figure.text-center
               img.image_floating(src="@/assets/curso/tema5/7.svg" data-aos="fade-up" style="display:inline;max-width:150px;")

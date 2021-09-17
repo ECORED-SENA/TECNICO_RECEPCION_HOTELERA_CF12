@@ -2,7 +2,7 @@ export default {
   global: {
     componenteFormativo: 'Procedimientos de pago',
     descripcionCurso:
-      'De la misma forma que el cliente ingresa al hotel, debe salir de el al final de su estancia. En esta unidad se revisarán los conceptos para llevar a cabo con eficiencia un Check out que es el último paso de la estancia del huésped y se tiene la responsabilidad de cerrar la estadía en forma impecable. Cualquier error en este momento puede dar al traste con toda la experiencia del usuario en el hotel.',
+      'De la misma forma que el cliente ingresa al hotel, debe salir de él al final de su estancia. En esta unidad se revisarán los conceptos para llevar a cabo con eficiencia un Check out que es el último paso de la estancia del huésped y se tiene la responsabilidad de cerrar la estadía en forma impecable. Cualquier error en este momento puede dar al traste con toda la experiencia del usuario en el hotel.',
     imagenBannerPrincipal: require('@/assets/curso/banner-principal.svg'),
     fondoBannerPrincipal: require('@/assets/curso/fondo-banner-principal.png'),
   },
@@ -17,13 +17,13 @@ export default {
         nombreRuta: 'tema1',
         icono: 'far fa-file-alt',
         numero: '1',
-        titulo: 'Check out',
+        titulo: '<em>Check out</em>',
         desarrolloContenidos: true,
         subMenu: [
           {
             icono: 'far fa-file-alt',
             numero: '1.1',
-            titulo: 'Late Check out',
+            titulo: '<em>Late Check out</em>',
             hash: 't_1_1',
           },
           {
@@ -82,7 +82,7 @@ export default {
           {
             icono: 'far fa-file-alt',
             numero: '3.5',
-            titulo: 'Cuentas compañía (Bill to)',
+            titulo: 'Cuentas compañía (<em>Bill to</em>)',
             hash: 't_3_5',
           },
           {
@@ -188,29 +188,28 @@ export default {
         nombre: 'Rafael Neftalí Lizcano Reyes',
         cargo: 'Asesor metodológico y pedagógico',
         centro:
-          'Centro Industrial del Diseño y la Manufactura Regional Santander',
+          'Centro Industrial del Diseño y la Manufactura - Regional Santander',
       },
       {
-        nombre: 'Sandra Isabel Suarez Delgado',
-        cargo: 'Instructor',
-        centro: 'Centro de Servicios y Gestión Empresarial',
+        nombre: 'Harbey Castelblanco Muñoz',
+        cargo: 'Experto temático',
+        centro: 'Centro Colombo Alemán',
       },
       {
-        nombre: 'Leidy Carolina Arias Aguirre',
+        nombre: 'Leidy Carolina Aris Aguirre',
         cargo: 'Diseñadora instruccional',
-        centro: 'Centro de Diseño y Metrología',
+        centro: 'Centro de Diseño y Metrología - Regional Distrito Capital',
       },
       {
-        nombre: 'Ana Catalina Córdoba Sus',
-        cargo: 'Revisora Metodológica y Pedagógica',
-        centro:
-          'Regional Distrito Capital – Centro para la Industria de la Comunicación Gráfica',
+        nombre: 'Carolina Coca Salazar',
+        cargo: 'Revisora metodológica y pedagógica',
+        centro: 'Centro de Diseño y Metrología - Regional Distrito Capital',
       },
       {
-        nombre: 'Jhana Johanna Bustillo Ardila',
-        cargo: 'Revisora de estilo',
+        nombre: 'José Gabriel Ortiz Abella',
+        cargo: 'Corrector de estilo',
         centro:
-          'Centro Industrial del Diseño y la Manufactura Regional Santander',
+          'Centro para la Industria de la Comunicación Gráfica - Regional Distrito Capital',
       },
     ],
     desarrolloProducto: [
@@ -218,37 +217,43 @@ export default {
         nombre: 'Francisco José Lizcano Reyes',
         cargo: 'Responsable equipo',
         centro:
-          'Centro Industrial del Diseño y la Manufactura Regional Santander',
+          'Centro Industrial del Diseño y la Manufactura - Regional Santander',
       },
       {
         nombre: 'Leyson Fabian Castaño Pérez',
         cargo: 'Soporte organizacional',
-        centro: 'Centro de Comercio y Servicios Regional Tolima',
+        centro: 'Centro de Comercio y Servicios - Regional Tolima',
       },
       {
         nombre: 'Carlos Julián Ramírez Benítez',
         cargo: 'Diseño web',
         centro:
-          'Centro Industrial del Diseño y la Manufactura Regional Santander',
+          'Centro Industrial del Diseño y la Manufactura - Regional Santander',
       },
       {
         nombre: 'Luis Jesús Pérez Madariaga',
         cargo: 'Desarrollo front-end',
         centro:
-          'Centro Industrial del Diseño y la Manufactura Regional Santander',
+          'Centro Industrial del Diseño y la Manufactura - Regional Santander',
       },
       {
-        nombre: 'Rafael Augusto Mantilla López',
+        nombre: 'Andrés Mauricio Santaella Ochoa',
+        cargo: 'Soporte front-end',
+        centro:
+          'Centro Industrial del Diseño y la Manufactura - Regional Santander',
+      },
+      {
+        nombre: 'Jhana Johanna Bustillo Ardila',
         cargo: 'Validación de diseño y contenido',
         centro:
-          'Centro Industrial del Diseño y la Manufactura Regional Santander',
+          'Centro Industrial del Diseño y la Manufactura - Regional Santander',
       },
     ],
     gestoresRepositorio: [
       {
         nombre: 'Milady Tatiana Villamil Castellanos',
         cargo: ['Validación y vinculación en plataforma LMS'],
-        centro: 'Centro de Comercio y Servicios Regional Tolima',
+        centro: 'Centro de Comercio y Servicios - Regional Tolima',
       },
     ],
   },
@@ -265,7 +270,7 @@ export default {
         'https://www.bde.es/f/webbde/EYC/billemone/euro/billetes/ficheros/es/Guia_resumida.pdf',
     },
     {
-      referencia: 'Banco de la República. (2021). Billetes y monedas.',
+      referencia: 'Banco de la República. (2021). Billetes y monedas. ',
       link: 'https://www.banrep.gov.co/es/billetes-y-monedas',
     },
     {
@@ -286,18 +291,18 @@ export default {
     },
     {
       referencia:
-        'Simón, M. (2016). Recepción Front Office. Ediciones Turísticas. ',
+        'Simón, M. (2016). <em>Recepción Front Office</em>. Ediciones Turísticas. ',
       link:
         'https://elibro-net.bdigital.sena.edu.co/es/ereader/senavirtual/78933?page=83&page=84',
     },
     {
       referencia:
-        'U.S. Currency Educatión Program. (01 de 06 de 2021). Dollars In Detail. ',
+        'U.S. <em>Currency Educatión Program</em>. (01 de 06 de 2021). <em>Dollars In Detail.</em> ',
       link:
         'https://www.uscurrency.gov/sites/default/files/download-materials/es/CEP_Dollars_In_Detail_Brochure.pdf',
     },
     {
-      referencia: 'Urrutia, M. (2006). Billete de mil pesos.',
+      referencia: 'Urrutia, M. (2006). Billete de mil pesos. ',
       link:
         'https://www.banrep.gov.co/es/billetes-y-monedas/billete-1000-pesos',
     },
@@ -316,12 +321,12 @@ export default {
     {
       termino: 'Norma PCI DSS',
       significado:
-        'Payment Card Industry Data Security Standards recopila los estándares y políticas que se deben implementar para proteger las transacciones con tarjeta de crédito, en lo referente a Software, redes y almacenamiento de información. ',
+        ' Payment Card Industry Data Security Standards recopila los estándares y políticas que se deben implementar para proteger las transacciones con tarjeta de crédito, en lo referente a <em>software</em>, redes y almacenamiento de información. ',
     },
     {
       termino: 'VPN',
       significado:
-        'Virtual Private Network: una red de conexión a internet privada y encriptada, para realizar las operaciones a través de ella.',
+        ' <em>Virtual Private Network</em>: una red de conexión a internet privada y encriptada, para realizar las operaciones a través de ella.',
     },
     {
       termino: 'DES o AES',

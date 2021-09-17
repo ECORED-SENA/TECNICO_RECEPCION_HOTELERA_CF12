@@ -42,7 +42,7 @@
           img.image_floating(src='@/assets/curso/tema2/4.svg' alt='' style="z-index:1;")
           .tarjeta.caja_flotante_rosada(style="background-color:#FFF1DB;border-radius:0px;" data-aos="zoom-in")
             .text-white.p-5
-              h3.mt-4(data-aos="fade-up") Anunciar Check out a las áreas
+              h3.mt-4(data-aos="fade-up") Anunciar #[em Check out] a las áreas
               p(data-aos="fade-up") Avisar a las demás áreas del hotel que la habitación va saliendo, para que los centros de facturación cierren las cuentas que tengan abiertas y el departamento encargado verifique los últimos consumos de minibar.
       .col-md-4.mb-3
         .tarjeta-avatar.tarjeta__tema2
@@ -56,8 +56,8 @@
           img.image_floating(src='@/assets/curso/tema2/6.svg' alt='' style="z-index:1;")
           .tarjeta.caja_flotante_rosada(style="background-color:#FFF1DB;border-radius:0px;" data-aos="zoom-in")
             .text-white.p-5
-              h3.mt-4(data-aos="fade-up") Pre - cuenta
-              p(data-aos="fade-up") Ya verificados los folios y los cargos, se muestra al huésped esta información para que él la valide. Es importante que en los casos de CxC o cuenta compañía que se encuentran respaldados por un Bill to, la cuenta que va para la empresa quede firmada. 
+              h3.mt-4(data-aos="fade-up") Pre-cuenta
+              p(data-aos="fade-up") Ya verificados los folios y los cargos, se muestra al huésped esta información para que él la valide. Es importante que en los casos de CxC o cuenta compañía que se encuentran respaldados por un #[em Bill to], la cuenta que va para la empresa quede firmada. 
 
     .col-md-4.m-auto.mt-4
         .tarjeta-avatar.tarjeta__tema2

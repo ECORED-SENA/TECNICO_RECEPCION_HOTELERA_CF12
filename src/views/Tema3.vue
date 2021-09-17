@@ -27,18 +27,24 @@
 
     p.mt-4(data-aos="fade-in" data-aos-easing="ease-out-cubic" data-aos-duration="1000") #[strong Actualmente circulan cinco tipos de monedas y seis valores distintos de billetes; a continuación, se verán en detalle sus características y elementos de seguridad.]
 
+    h3.mt-5(data-aos="fade-up") Billetes colombianos
+
+    p.mt-3(data-aos="fade-up") Con la familia de billetes colombianos se da continuidad al concepto de biodiversidad presentado en la familia de monedas que comenzó a circular desde 2012, exaltando la riqueza natural del país. Como parte de la noción de familia, estos billetes cuentan con elementos de seguridad, cuya ubicación y manera de verificar son comunes en todas las denominaciones, facilitándole al público su comprobación y reconocimiento de la autenticidad. Actualmente, esta familia está circulando de manera simultánea con los billetes de anterior diseño, sirviendo ambos para hacer transacciones (Banco de la República, 2021).
+
     .mt-4.p-5.caja_flotante(style="background-color:#FFF1DB;")
       p(data-aos="zoom-in") Los billetes colombianos tiene diferentes características de seguridad las que se evidencian tocando, observando detenidamente, comprobando y/o girando. #[strong A continuación elige cada billete y  reconoce cada una de las formas para identificar su autenticidad.]
 
-    .row.mt-4.indicador__container
+    .row.mt-4
       .col-md-4.mb-3
-        figure
+        figure.indicador__container
           img.image_floating.image__modal(src="@/assets/curso/tema3/2.svg" @click="modal1 = true" data-aos="zoom-in" @mouseover="mostrarIndicador = false")
         .indicador--click(v-if="mostrarIndicador")
         ModalA(:abrir-modal.sync="modal1")
           .p-5.caja_flotante(style="background-color:#E8EFE0;")
             h3 Billete de cien mil pesos
-            p.mt-2 A partir del 31 de marzo de 2016 el Banco de la República introdujo al mercado el nuevo billete de $100 mil, el primero de la nueva familia. La imagen del presidente Carlos Lleras Restrepo junto con el pájaro barranquero y la flor del sietecueros¹ son la imagen del nuevo billete. 
+            p.mt-2 A partir del 31 de marzo de 2016 el Banco de la República introdujo al mercado el nuevo billete de $100 mil, el primero de la nueva familia. La imagen del presidente Carlos Lleras Restrepo junto con el pájaro barranquero y la flor del sietecueros son la imagen del nuevo billete.
+
+            h4.mt-4 Tocar, Observar, Girar, Comprobar 
 
           div(v-if="!reverso100")
             .img-infografica.color-secundario.mt-4(data-aos="zoom-in")
@@ -78,7 +84,7 @@
                     img.image_floating(src="@/assets/curso/tema3/3.svg" style="max-width:200px;" data-aos="fade-up")
                 .col-md-5(style="place-self:center;")
                   .p-3(style="background-color:#FF9800;border-radius:8px;" data-aos="fade-up")
-                    p.mb-0.text-white El texto 100mil pesos del extremo superior izquierdo esta en relieve
+                    p.mb-0.text-white El texto 100 mil pesos del extremo superior izquierdo está en relieve
 
               .row.mt-5.content__info_billete(v-if="item__2" data-aos="zoom-in")
                 .col-md-3
@@ -177,7 +183,7 @@
                     img.image_floating(src="@/assets/curso/tema3/15.svg" style="max-width:200px;" data-aos="fade-up")
                 .col-md-5(style="place-self:center;")
                   .p-3(style="background-color:#FF9800;border-radius:8px;" data-aos="fade-up")
-                    p.mb-0.text-white El texto 100mil pesos del extremo superior izquierdo está en relieve
+                    p.mb-0.text-white El texto 100 mil pesos del extremo superior izquierdo está en relieve
 
               .row.mt-5.content__info_billete(v-if="item__2" data-aos="zoom-in")
                 .col-md-2
@@ -255,7 +261,9 @@
         ModalA(:abrir-modal.sync="modal2")
           .p-5.caja_flotante(style="background-color:#F2E8E8;")
             h3 Billete de cincuenta mil pesos
-            p.mt-2 A partir del viernes 19 de agosto de 2016 el Banco de la República introdujo al mercado el nuevo billete de $50 mil, el tercero de la nueva familia. Ciudad Perdida (núcleo de la cultura Tayrona), la Sierra Nevada de Santa Marta, un colibrí picando una flor y un caracol burgao, junto con el nobel de literatura Gabriel García Márquez¹ son la imagen del nuevo billete. Este billete circulará simultáneamente con el actual.
+            p.mt-2 A partir del viernes 19 de agosto de 2016 el Banco de la República introdujo al mercado el nuevo billete de $50 mil, el tercero de la nueva familia. Ciudad Perdida (núcleo de la cultura Tayrona), la Sierra Nevada de Santa Marta, un colibrí picando una flor y un caracol burgao, junto con el nobel de literatura Gabriel García Márquez son la imagen del nuevo billete. Este billete circulará simultáneamente con el actual.
+
+            h4.mt-4 Tocar, Observar, Girar, Comprobar 
 
           div(v-if="!reverso50")
             .img-infografica.color-secundario.mt-4(data-aos="zoom-in")
@@ -307,7 +315,7 @@
                     img.image_floating(src="@/assets/curso/tema3/24.svg" style="max-width:200px;" data-aos="fade-up")
                 .col-md-5(style="place-self:center;")
                   .p-3(style="background-color:#FF9800;border-radius:8px;" data-aos="fade-up")
-                    p.mb-0.text-white El texto 50mil pesos del extremo superior izquierdo está en relieve
+                    p.mb-0.text-white El texto 50 mil pesos del extremo superior izquierdo está en relieve
 
             div(style="position:relative;z-index:2;background-color:white;")
               .mt-5.row.content__info_billete(v-if="item__3_50" data-aos="zoom-in")
@@ -503,6 +511,8 @@
           .p-5.caja_flotante(style="background-color:#F2E8E8;")
             h3 Billete de veinte mil pesos
             p.mt-2 A partir del jueves 30 de junio de 2016 el Banco de la República introdujo al mercado el nuevo billete de $20 mil, el segundo de la nueva familia. Los canales de La Mojana en la región donde se asentó el pueblo zenú, el fruto del anón, la orejera zenú y el sombrero vueltia’o, junto con el presidente Alfonso López Michelsen, son la imagen del nuevo billete. Este billete circulará simultáneamente con el actual.
+
+            h4.mt-4 Tocar, Observar, Girar, Comprobar 
 
           div(v-if="!reverso20")
             .img-infografica.color-secundario.mt-4(data-aos="zoom-in")
@@ -748,7 +758,9 @@
         ModalA(:abrir-modal.sync="modal4")
           .p-5.caja_flotante(style="background-color:#F2E8E8;")
             h3 Billete de diez mil pesos
-            p.mt-2 A partir del miércoles 07 de diciembre de 2016 el Banco de la República introdujo al mercado el nuevo billete de $10 mil, el sexto y último de la nueva familia. La antropóloga Virginia Gutiérrez, junto con la región amazónica, la flor de la Victoria regia y la rana arborícola son la imagen del nuevo billete. 
+            p.mt-2 A partir del miércoles 07 de diciembre de 2016 el Banco de la República introdujo al mercado el nuevo billete de $10 mil, el sexto y último de la nueva familia. La antropóloga Virginia Gutiérrez, junto con la región amazónica, la flor de la Victoria regia y la rana arborícola son la imagen del nuevo billete.
+
+            h4.mt-4 Tocar, Observar, Girar, Comprobar 
 
           div(v-if="!reverso10")
             .img-infografica.color-secundario.mt-4(data-aos="zoom-in")
@@ -965,11 +977,11 @@
         .indicador--click(v-if="mostrarIndicador")
       .col-md-4.mb-3
         figure
-          img.image_floating.image__modal(src="@/assets/curso/tema3/73.svg" @click="modal5 = true" data-aos="zoom-in" @mouseover="mostrarIndicador = false")
+          img.image_floating.image__modal(src="@/assets/curso/tema3/73.svg" @click="modal5_1 = true" data-aos="zoom-in" @mouseover="mostrarIndicador = false")
         .indicador--click(v-if="mostrarIndicador")
       .col-md-4.mb-3.m-auto
         figure
-          img.image_floating.image__modal(src="@/assets/curso/tema3/74.svg" @click="modal5 = true" data-aos="zoom-in" @mouseover="mostrarIndicador = false")
+          img.image_floating.image__modal(src="@/assets/curso/tema3/74.svg" @click="modal5_1 = true" data-aos="zoom-in" @mouseover="mostrarIndicador = false")
         .indicador--click(v-if="mostrarIndicador")
 
         ModalA(:abrir-modal.sync="modal5")
@@ -988,6 +1000,8 @@
                 .anexo__texto
                   p(style="color: #111E61;") Consulte el video educativo “Cinco pasos para reconocer el billete de 5 mil pesos” 
 
+        ModalA(:abrir-modal.sync="modal5_1")
+          h3 Billetes denominaciones menores
           .row.mt-5
             .col-md-6
               figure
@@ -1001,6 +1015,8 @@
                 .anexo__texto
                   p(style="color: #111E61;") Consulte el video educativo “Cinco pasos para reconocer el billete de 2 mil pesos” 
 
+        ModalA(:abrir-modal.sync="modal5_2")
+          h3 Billetes denominaciones menores
           .row.mt-5
             .col-md-6
               figure
@@ -1018,9 +1034,9 @@
         figure
           img(data-aos="fade-left" src="@/assets/curso/tema3/75.svg")
 
-    .row.mt-3.indicador__container
+    .row.mt-3
       .col-md-3.mb-3
-        figure
+        figure.indicador__container
           img.caja_escalada_hover(src="@/assets/curso/tema3/76.svg" style="cursor:pointer;" @mouseover="mostrarIndicador2 = false" @click="modal6 = true")
         .indicador--click(v-if="mostrarIndicador2")
         .p-3.caja_flotante(style="background-color:#FF9800" data-aos="fade-up")
@@ -1041,7 +1057,7 @@
               figure.text-center
                 img(src="@/assets/curso/tema3/82.svg" style="max-width:300px;display:inline;")
               h4.mt-4 Reverso (sello)
-              p.mt-3 ocupando la mitad inferior de la moneda, se pueden apreciar líneas onduladas continuas en sentido horizontal sobre un fondo de líneas rectas con la leyenda CUIDAR EL AGUA repetida cuatro veces en forma consecutiva e invertida cada una respecto de la anterior. Ocupando la mitad superior de la moneda se observa la denominación de la especie monetaria, el número 1000, y debajo de éste la palabra PESOS. También incluye el texto REPÚBLICA DE COLOMBIA, el año de emisión y una imagen latente que genera un efecto visual dependiendo del ángulo en que se aprecie. En una posición de la moneda se puede leer la palabra MIL, que cambia a BRC (iniciales del Banco de la República de Colombia) al cambiar el ángulo desde el cual se observa la moneda (Banco de la República, 2021).
+              p.mt-3 Ocupando la mitad inferior de la moneda, se pueden apreciar líneas onduladas continuas en sentido horizontal sobre un fondo de líneas rectas con la leyenda CUIDAR EL AGUA repetida cuatro veces en forma consecutiva e invertida cada una respecto de la anterior. Ocupando la mitad superior de la moneda se observa la denominación de la especie monetaria, el número 1000, y debajo de éste la palabra PESOS. También incluye el texto REPÚBLICA DE COLOMBIA, el año de emisión y una imagen latente que genera un efecto visual dependiendo del ángulo en que se aprecie. En una posición de la moneda se puede leer la palabra MIL, que cambia a BRC (iniciales del Banco de la República de Colombia) al cambiar el ángulo desde el cual se observa la moneda (Banco de la República, 2021).
 
           a.anexo.mb-lg-0.mt-4.col-md-6(:href="obtenerLink('downloads/Anexo_1_Moneda_de_1000_antigua.pdf')" target="_blank")
             .anexo__icono
@@ -1111,12 +1127,12 @@
 
       .col-md-3.mb-3
         figure
-          img.caja_escalada_hover(src="@/assets/curso/tema3/79.svg" style="cursor:pointer;" @mouseover="mostrarIndicador2 = false" @click="modal8 = true")
+          img.caja_escalada_hover(src="@/assets/curso/tema3/79.svg" style="cursor:pointer;" @mouseover="mostrarIndicador2 = false" @click="modal9 = true")
         .indicador--click(v-if="mostrarIndicador2")
         .p-3.caja_flotante(style="background-color:#FF9800" data-aos="fade-up")
           h4.text-center Moneda de cien pesos #[br] ($100)
 
-        ModalA(:abrir-modal.sync="modal8")
+        ModalA(:abrir-modal.sync="modal9")
           .p-5.caja_flotante_azul(style="background-color:#E8EFE0")
             h3 Moneda de cien pesos ($100) 
             p.mt-2 El frailejón (#[strong Espeletia grandiflora]), es la especie de la biodiversidad colombiana, que está presente en el anverso (cara) de las nuevas monedas de $100, que el Banco de la República puso en circulación a partir del segundo semestre de 2012. Esta especie característica de los páramos sudamericanos solo está presente en la cordillera de los Andes de Venezuela, Colombia y Ecuador. De las ocho especies que se conocen, cinco se encuentran en la Cordillera Oriental de Colombia. Esta moneda fue diseñada (anverso) por la artista Johana Calle y el reverso por José Antonio Suárez.
@@ -1126,12 +1142,12 @@
               figure.text-center
                 img(src="@/assets/curso/tema3/79.svg" style="max-width:300px;display:inline;")
               h4.mt-4 Anverso (cara)
-              p.mt-3 texto: “FRAILEJÓN” y en microtexto “Espeletia grandiflora” en alto relieve, ubicados en el semicírculo superior. #[br] Imagen del frailejón: ubicada en el centro de la moneda, elaborada con volumen y detalles finos en su diseño, con relieves y alta definición. #[br] Diseños finos: líneas horizontales finas en alto relieve en la parte inferior izquierda, cuya distancia se va ampliando en la parte derecha 
+              p.mt-3 Texto: “FRAILEJÓN” y en microtexto “Espeletia grandiflora” en alto relieve, ubicados en el semicírculo superior. #[br] Imagen del frailejón: ubicada en el centro de la moneda, elaborada con volumen y detalles finos en su diseño, con relieves y alta definición. #[br] Diseños finos: líneas horizontales finas en alto relieve en la parte inferior izquierda, cuya distancia se va ampliando en la parte derecha 
             .col-md-6.mb-3
               figure.text-center
                 img(src="@/assets/curso/tema3/85.svg" style="max-width:300px;display:inline;")
               h4.mt-4 Reverso (sello)
-              p.mt-3  textos circunscritos: el texto “REPÚBLICA DE COLOMBIA” y año de emisión en alto relieve. Al comienzo y al final del texto hay un punto en alto relieve. #[br] Denominación: los textos “100” y “PESOS” en alto relieve. Antes y después de esta última palabra hay un punto en alto relieve. #[br] Zona lisa: como fondo de la moneda, plana y brillante.
+              p.mt-3  Textos circunscritos: el texto “REPÚBLICA DE COLOMBIA” y año de emisión en alto relieve. Al comienzo y al final del texto hay un punto en alto relieve. #[br] Denominación: los textos “100” y “PESOS” en alto relieve. Antes y después de esta última palabra hay un punto en alto relieve. #[br] Zona lisa: como fondo de la moneda, plana y brillante.
 
           a.anexo.mb-lg-0.mt-4.col-md-6(:href="obtenerLink('downloads/Anexo_4_Moneda_de_100_antigua.pdf')" target="_blank")
             .anexo__icono
@@ -1142,12 +1158,12 @@
     .row.col-md-6.m-auto
       .col-md-6.mb-3
         figure
-          img.caja_escalada_hover(src="@/assets/curso/tema3/80.svg" style="cursor:pointer;" @mouseover="mostrarIndicador2 = false" @click="modal9 = true")
+          img.caja_escalada_hover(src="@/assets/curso/tema3/80.svg" style="cursor:pointer;" @mouseover="mostrarIndicador2 = false" @click="modal10 = true")
         .indicador--click(v-if="mostrarIndicador2")
         .p-3.caja_flotante(style="background-color:#FF9800" data-aos="fade-up")
           h4.text-center Moneda de cincuenta pesos #[br] ($50)
 
-        ModalA(:abrir-modal.sync="modal9")
+        ModalA(:abrir-modal.sync="modal10")
           .p-5.caja_flotante_azul(style="background-color:#E8EFE0")
             h3 Moneda de cincuenta pesos ($50) 
 
@@ -1165,12 +1181,12 @@
 
       .col-md-6.mb-3
         figure
-          img.caja_escalada_hover(src="@/assets/curso/tema3/81.svg" style="cursor:pointer;" @mouseover="mostrarIndicador2 = false" @click="modal10 = true")
+          img.caja_escalada_hover(src="@/assets/curso/tema3/81.svg" style="cursor:pointer;" @mouseover="mostrarIndicador2 = false" @click="modal11 = true")
         .indicador--click(v-if="mostrarIndicador2")
         .p-3.caja_flotante(style="background-color:#FF9800" data-aos="fade-up")
           h4.text-center Denominaciones #[br] menores
 
-        ModalA(:abrir-modal.sync="modal10")
+        ModalA(:abrir-modal.sync="modal11")
           .p-5.caja_flotante_azul(style="background-color:#E8EFE0")
             h3 Denominaciones menores
 
@@ -1201,7 +1217,7 @@
           img.image_floating(src="@/assets/curso/tema3/87.svg" data-aos="fade-left" style="display:inline;max-width:200px")
 
     h3.mt-5(data-aos="fade-up") Dólares
-    p.mt-3(data-aos="fade-up") Se entienden estas como la moneda extranjera que se maneja en el comercio internacional. Como es lógico, cada país cuenta con su propia moneda, por tanto, sería demasiado extenso explicar cada una de ellas, por lo que aquí se hará énfasis en las que comúnmente se aceptan en los hoteles como pago o garantía y que por lo general son dólares y euros, las cuales son las monedas oficiales de Estados Unidos de América y de la Unión Europea, respectivamente.
+    p.mt-3(data-aos="fade-up") La Junta de la Reserva Federal de los EE. UU. emite billetes de USD$1, USD$2, USD$5, USD$10, USD$20, USD$50 y USD$100. El Gobierno de los EE. UU. rediseña periódicamente los billetes de la Reserva Federal para que sean más fáciles de usar, pero más difíciles de falsificar. El estilo actual de billetes se muestra a continuación:
 
     .col-md-6.m-auto
       h4.mt-5.text-center(data-aos="fade-up") Elementos de seguridad de billetes
@@ -1217,16 +1233,16 @@
         .p-4.text-center.caja__activa.caja__interactiva.caja_escalada_hover(style="background-color:#FF9800;position:relative;cursor:pointer;" @click="setInfoDolar('Toque el papel:','pase sus dedos por el billete. Deberá sentir que es algo áspero al tacto como resultado del proceso de impresión intaglio y la composición única del papel. El papel de la moneda de los EE. UU. es una mezcla de 75 por ciento de algodón y 25 por ciento de lino.')")
           h5.mb-0 Toque el papel
       .col-md-2.mb-4
-        .p-4.text-center.caja__interactiva.caja_escalada_hover(style="background-color:#FF9800;position:relative;cursor:pointer;" @click="setInfoDolar('Incline el billete:','tinta que cambia de color. Incline el billete para ver cómo la tinta de los números en la esquina inferior derecha cambia de cobre a verde en las denominaciones de $10 en adelante. La campana en el tintero del billete de USD$100 también cambia de cobre a verde.')")
+        .p-4.text-center.caja__interactiva.caja_escalada_hover(style="background-color:#FF9800;position:relative;cursor:pointer;" @click="setInfoDolar('Incline el billete:','tinta que cambia de color. Incline el billete para ver cómo la tinta de los números en la esquina inferior derecha cambia de cobre a verde en las denominaciones de $10 en adelante. La campana en el tintero del billete de USD 100 también cambia de cobre a verde.')")
           h5.mb-0 Incline el billete
       .col-md-2.mb-4
-        .p-4.text-center.caja__interactiva.caja_escalada_hover(style="background-color:#FF9800;position:relative;cursor:pointer;" @click="setInfoDolar('Mire a contraluz:','hilo de seguridad. Sostenga el billete a contraluz para ver un hilo de seguridad incrustado verticalmente en las denominaciones de USD$5 en adelante. El hilo está incrustado en una posición diferente en cada denominación y se ilumina de un color diferente cuando se sostiene ante la luz ultravioleta (UV). El hilo de seguridad es visible desde ambos lados del billete.')")
+        .p-4.text-center.caja__interactiva.caja_escalada_hover(style="background-color:#FF9800;position:relative;cursor:pointer;" @click="setInfoDolar('Mire a contraluz:','hilo de seguridad. Sostenga el billete a contraluz para ver un hilo de seguridad incrustado verticalmente en las denominaciones de USD 5 en adelante. El hilo está incrustado en una posición diferente en cada denominación y se ilumina de un color diferente cuando se sostiene ante la luz ultravioleta (UV). El hilo de seguridad es visible desde ambos lados del billete.')")
           h5.mb-0 Mire a contraluz
       .col-md-2.mb-4
         .p-4.text-center.caja__interactiva.caja_escalada_hover(style="background-color:#FF9800;position:relative;cursor:pointer;" @click="setInfoDolar('Marca de agua','sostenga el billete a contraluz para ver una imagen tenue a la derecha del retrato en las denominaciones de USD$5 en adelante. Las marcas de agua son visibles desde ambos lados del billete. En las denominaciones de USD$10 en adelante, la marca de agua coincide con el retrato. El billete de USD$5 de estilo actual tiene dos marcas de agua y ambas son del número 5.')")
           h5.mb-0 Marca de agua
       .col-md-4
-        .p-4.text-center.caja__interactiva.caja_escalada_hover(style="background-color:#FF9800;position:relative;cursor:pointer;" @click="setInfoDolar('Banda de seguridad en 3-D:','el billete de USD$100 presenta una banda de seguridad en 3-D de color azul con imágenes de campanas y números 100. Cuando inclina el billete hacia adelante y atrás, las campanas y los números 100 de la banda se mueven de un lado a otro. Si inclina el billete de un lado a otro, las campanas y los números 100 se mueven hacia arriba y abajo. La banda de seguridad en 3-D está tejida en el papel, no impresa.')")
+        .p-4.text-center.caja__interactiva.caja_escalada_hover(style="background-color:#FF9800;position:relative;cursor:pointer;" @click="setInfoDolar('Banda de seguridad en 3-D:','el billete de USD 100 presenta una banda de seguridad en 3-D de color azul con imágenes de campanas y números 100. Cuando inclina el billete hacia adelante y atrás, las campanas y los números 100 de la banda se mueven de un lado a otro. Si inclina el billete de un lado a otro, las campanas y los números 100 se mueven hacia arriba y abajo. La banda de seguridad en 3-D está tejida en el papel, no impresa.')")
           h5.mb-0 Banda de seguridad en 3-D 
 
     .mt-5.p-5.caja_flotante(style="background-color:#FFF1DB" data-aos="fade-up")
@@ -1234,9 +1250,9 @@
 
     h4.mt-5.text-center(data-aos="fade-up") Mire con ampliación
 
-    p.mt-4(data-aos="fade-up") #[strong.h5 Microimpresión.] La microimpresión puede ayudar en la autenticación y se ofrece en varios lugares en las denominaciones de $5 en adelante. Estas pequeñas palabras impresas deben ser claras, aunque pueden requerir la ampliación para poder verse. La microimpresión o corresponde a la denominación o contiene frases como “THE UNITED STATES OF AMERICA”, “USA” o “E PLURIBUS UNUM.”
+    p.mt-4(data-aos="fade-up") #[strong.h5 Microimpresión:] la microimpresión puede ayudar en la autenticación y se ofrece en varios lugares en las denominaciones de $5 en adelante. Estas pequeñas palabras impresas deben ser claras, aunque pueden requerir la ampliación para poder verse. La microimpresión o corresponde a la denominación o contiene frases como “THE UNITED STATES OF AMERICA”, “USA” o “E PLURIBUS UNUM.”
 
-    p.mt-4(data-aos="fade-up") #[strong.h5 Fibras rojas y azules.] El papel de la moneda de los EE. UU. tiene pequeñas fibras de seguridad de color rojo y azul que están incrustadas por todo el billete.
+    p.mt-4(data-aos="fade-up") #[strong.h5 Fibras rojas y azules:] el papel de la moneda de los EE. UU. tiene pequeñas fibras de seguridad de color rojo y azul que están incrustadas por todo el billete.
 
     .tarjeta.text-white.p-3.mt-5.col-md-10.m-auto(data-aos="zoom-in" style="background: linear-gradient(#ff9800, rgb(255 221 172))")
       .row.justify-content-around.align-items-center
@@ -1256,9 +1272,9 @@
 
     p.mt-3(data-aos="fade-up") En Europa la emisión de moneda es diferente ya que la gran mayoría de los países de este continente están asociados a la Unión Europea (UE), desde 1993, que es una comunidad política de derecho constituida en régimen de organización internacional nacida para propiciar y acoger la integración y gobernanza en común de los Estados y los pueblos de Europa. Una de las consecuencias de esta unión es que en los veintisiete (27) países miembros se usa una sola moneda, el “Euro” que es expedido por el Banco Central Europeo.
 
-    p.mt-3(data-aos="fade-up") Los billetes y las monedas en euros son el único medio de pago de curso legal en los países de la zona del euro, desde el 1 de enero de 2002, siete son las denominaciones de los billetes de curso legal de la zona del euro: 5€, 10€, 20€, 50€, 100€, 200€ y 500€. Los billetes, que plasman los estilos arquitectónicos representativos de siete épocas de la historia cultural europea, son idénticos para todos los países que han adoptado el euro como moneda única.
+    p.mt-3(data-aos="fade-up") Los billetes y las monedas en euros son el único medio de pago de curso legal en los países de la zona del euro, desde el 1 de enero de 2002, siete son las denominaciones de los billetes de curso legal de la zona del euro: 5 €, 10 €, 20 €, 50 €, 100 €, 200 € y 500 €. Los billetes, que plasman los estilos arquitectónicos representativos de siete épocas de la historia cultural europea, son idénticos para todos los países que han adoptado el euro como moneda única.
 
-    p.mt-3(data-aos="fade-up") En el año 2013 comenzó la puesta en circulación de billetes de la serie Europa, con la emisión del billete de 5€ y continuó en 2014, 2015 y 2017 con la emisión de los billetes de 10€, 20€ y 50€, respectivamente. El 28 de mayo de 2019 entraron en circulación los nuevos billetes de 100€ y de 200€, dándose por finalizada la emisión de los billetes de la serie Europa, ya que esta segunda serie no incluye billetes de 500€. La denominada serie Europa presenta un nuevo diseño y mejoras en la seguridad (Banco de España, 2021).
+    p.mt-3(data-aos="fade-up") En el año 2013 comenzó la puesta en circulación de billetes de la serie Europa, con la emisión del billete de 5 € y continuó en 2014, 2015 y 2017 con la emisión de los billetes de 10 €, 20 € y 50 €, respectivamente. El 28 de mayo de 2019 entraron en circulación los nuevos billetes de 100 € y de 200 €, dándose por finalizada la emisión de los billetes de la serie Europa, ya que esta segunda serie no incluye billetes de 500 €. La denominada serie Europa presenta un nuevo diseño y mejoras en la seguridad (Banco de España, 2021).
 
     .col-md-9.m-auto
       h4.mt-5.text-center(data-aos="fade-up") Elementos de seguridad de billetes - Euros
@@ -1274,7 +1290,7 @@
         .p-4.text-center.caja__activa.caja__interactiva.caja_escalada_hover(style="background-color:#FF9800;position:relative;cursor:pointer;" @click="setInfoEuro('Toque el papel:','los billetes en euros se imprimen en un papel hecho a base de fibras de algodón que les confiere una textura característica. Varias zonas del anverso están impresas en relieve y pueden identificarse al tacto. En general los billetes tienen una sensación al tacto inconfundible y una textura firme y resistente, que suele sentirse más gruesa en algunas partes del billete.')")
           h5.mb-0 Toque el papel 
       .col-md-4.mb-4
-        .p-4.text-center.caja__activa.caja__interactiva.caja_escalada_hover(style="background-color:#FF9800;position:relative;cursor:pointer;" @click="setInfoEuro('Mire:','mirando al trasluz se hacen visibles la marca de agua, el hilo de seguridad y el valor según la denominación. En los billetes de 20€, 50€, 100€ y 200€ también se aprecia la ventana con retrato.')")
+        .p-4.text-center.caja__activa.caja__interactiva.caja_escalada_hover(style="background-color:#FF9800;position:relative;cursor:pointer;" @click="setInfoEuro('Mire:','mirando al trasluz se hacen visibles la marca de agua, el hilo de seguridad y el valor según la denominación. En los billetes de 20 €, 50 €, 100 € y 200 € también se aprecia la ventana con retrato.')")
           h5.mb-0 Mire
       .col-md-4.mb-4
         .p-4.text-center.caja__activa.caja__interactiva.caja_escalada_hover(style="background-color:#FF9800;position:relative;cursor:pointer;" @click="setInfoEuro('Gire:','la banda plateada muestra un retrato de Europa en una ventana transparente y el número verde esmeralda produce un reflejo metálico que se desplaza verticalmente.')")
@@ -1291,7 +1307,7 @@
           .row.justify-content-between.align-items-center
             .col.mb-3.mb-sm-0
               h4.mt-3(data-aos="fade-up" style="color: #12263F !important;") Más información sobre el Euro
-              p.mt-3(style="color: #12263F !important;") Para obtener mayor información sobre los elementos de seguridad de los billetes y monedas estadounidenses consulte el siguiente documento: 
+              p.mt-3(style="color: #12263F !important;") Para obtener mayor información sobre los elementos de seguridad de los billetes y las monedas en euros consulte el siguiente documento: 
             .col-sm-auto
               a.boton.boton--b.color-acento-botones(:href="obtenerLink('downloads/Anexo_6_SEC_features_es.pdf')" target="_blank")
                 span Descargar
@@ -1357,10 +1373,10 @@
       h4.text-center(data-aos="fade-up") ¿Quién calcula la TRM?
 
       .row.mt-5
-        .col-md-5.pr-0.pl-0
+        .col-md-5.pr-0.pl-0.order-xs-2
           .p-5(style="background-color:white;border-radius:20px;" data-aos="zoom-in")
             p(data-aos="fade-up") La entidad encargada de calcular y certificar la TRM diaria es la Superintendencia Financiera de Colombia. 
-        .col-md-2.pr-0.pl-0(style="place-self:end")
+        .col-md-2.pr-0.pl-0.order-xs-1(style="place-self:end")
           figure(style="text-align:left;")
             img.image_floating.image__formating(src="@/assets/curso/tema3/100.svg" style="max-width:150px;display:inline;margin-left: -3rem;z-index: 4;position: relative;" data-aos="zoom-in")
 
@@ -1377,13 +1393,13 @@
             p(data-aos="fade-up") Sin embargo, el Banco de la República es el encargado de definir la metodología con la que se calcula la TRM a través del Manual del Departamento de Operaciones y Desarrollo de Mercados. 
 
       .row.mt-4
-        .col-md-7.pr-0.pl-0
+        .col-md-7.pr-0.pl-0.order-xs-2
           .p-4(style="background-color:white;border-radius:20px;" data-aos="zoom-in")
             p(data-aos="fade-up") Los cambios en la metodología del cálculo se definen mediante resoluciones que luego se anuncian con una circular reglamentaria. Por ejemplo, el último cambio antes de escribir este artículo fue publicado el 15 de diciembre del 2015, en el que se aclara que a partir del 1 de febrero de 2016 se excluyen del cálculo las operaciones por montos inferiores a cinco mil dólares estadounidenses (Dólar Colombia, 2021). 
-        .col-md-2.pr-0.pl-0(style="place-self:center")
+        .col-md-2.pr-0.pl-0.order-xs-3(style="place-self:center")
           figure(style="text-align:left;")
             img.image_floating.image__formating(src="@/assets/curso/tema3/104.svg" style="max-width:200px;display:inline;margin-left: -4rem;z-index: 4;position: relative;" data-aos="zoom-in")
-        .col-md-2.pr-0.pl-0(style="place-self:left")
+        .col-md-2.pr-0.pl-0.order-xs-1(style="place-self:left")
           figure(style="text-align:left;")
             img.image_floating.image__formating(src="@/assets/curso/tema3/103.svg" style="max-width:80px;display:inline;margin-top: -4rem;z-index: 4;position: relative;" data-aos="zoom-in")
 
@@ -1420,11 +1436,11 @@
 
     h3.mt-5(data-aos="fade-up") Organizacionales
 
-    p.mt-4(data-aos="fade-up") En consecuencia, de las políticas estatales se fijan los lineamientos organizacionales, cuyo propósito es dar cumplimiento a la normatividad y satisfacer las necesidades de aquellos huéspedes requieren pagar sus gastos de viaje con moneda extranjera.
+    p.mt-4(data-aos="fade-up") En consecuencia de las políticas estatales, se fijan los lineamientos organizacionales, que cuyo propósito es dar cumplimiento a la normatividad y satisfacer las necesidades de aquellos huéspedes requieren pagar sus gastos de viaje con moneda extranjera.
 
     p.mt-3(data-aos="fade-up") Como vimos, es importante establecer claramente la identidad del huésped, para ello, cada vez que se realice un cambio de moneda o se reciban dólares como parte de pago de la cuenta, el cajero debe anexar una copia del documento de identidad. De igual forma, además de hacer la respectiva comprobación de la validez de los billetes, es importante relacionar la denominación y el serial de cada uno de los recibidos.
 
-    p.mt-3(data-aos="fade-up") La base o fondo de recepción no cuenta con moneda extranjera, por lo tanto, cuando haya lugar a devoluciones, estas deberán hacerse en moneda nacional, generando lo que llamamos un Paid Out.
+    p.mt-3(data-aos="fade-up") La base o fondo de recepción no cuenta con moneda extranjera, por lo tanto, cuando haya lugar a devoluciones, estas deberán hacerse en moneda nacional, generando lo que llamamos un #[em Paid Out].
 
     p.mt-3(data-aos="fade-up") Al momento de recibir pagos en dólares, no se tiene establecido un límite, pero cuando se trata de cambio por pesos colombianos, cada establecimiento es responsable de fijar el monto máximo, siempre asegurando que no se agote la base o fondo de caja y previniendo fraudes.
 
@@ -1449,7 +1465,7 @@
     h3.mt-5(data-aos="fade-up") Elementos de seguridad
     p.mt-3(data-aos="fade-up") Para adentrarse en los elementos de seguridad de una tarjeta de crédito o débito, lo primero que se debe conocer es la composición de esta, por lo tanto, se detallarán los elementos a tener en cuenta cuando se recibe un pago por este medio.
 
-    .col-md-3.m-auto.p-2.mt-5(style="background-color:#FF9800;border-radius:7px;" data-aos="fade-up")
+    //.col-md-3.m-auto.p-2.mt-5(style="background-color:#FF9800;border-radius:7px;" data-aos="fade-up")
       h5.text-center.mb-0 Nombre y Logo del Banco Emisor
 
     .img-infografica.color-secundario.mt-3.col-md-6.m-auto(data-aos="zoom-in")
@@ -1485,11 +1501,11 @@
         p.mt-3 La información que hasta hace unos años solo se almacenaba en la banda magnética, hoy se encuentra en un chip que brinda mayor seguridad y durabilidad. Con la aparición de este dispositivo, se abrió una nueva posibilidad de hacer transacciones con “dinero plástico”. Si al lado del chip se encuentran cuatro líneas semicurvas, representando el símbolo Wifi, significa que también podemos realizar el cobro sin contacto, es decir que la tarjeta únicamente la manipula el propietario. A la hora de recibir un pago con tarjeta, el datáfono recibe información básica contenida en el chip y la transmite a la entidad emisora para que valide la transacción, este es un proceso que tarda segundos y por lo que cobra vital importancia el uso del TPV, tal como veremos más adelante.
 
       .mt-4.p-5.col-md-8.m-auto.content__info_billete.caja_flotante(v-if="item__2_tarjeta" data-aos="zoom-in" style="background-color:#FFF1DB;")
-        h4 Numero tarjeta
+        h4 Número tarjeta
         p.mt-3 Los primeros dígitos de todas las tarjetas corresponden al número del emisor de la empresa o franquiciante, la entidad financiera y el país. En Colombia, las franquicias más conocidas son Visa y MasterCard, cuyos plásticos cuentan con 4 bloques de 4 números cada uno, para un total de 16 dígitos. Las tarjetas Visa comienzan todas por 4, ya sean de crédito o débito, estás últimas conocidas como Visa Electrón. Para el caso de MasterCard tiene asignado como primer número el 5, de igual forma en sus tarjetas de crédito o débito, que son identificadas como Maestro. Otras menos conocidas y aceptadas, pero también vigentes, son las franquicias Diners Club y American Express, teniendo la primera 14 dígitos y 15 la segunda, siendo en ambos casos el 3 su número inicial.
 
       .mt-4.p-5.col-md-8.m-auto.content__info_billete.caja_flotante(v-if="item__3_tarjeta" data-aos="zoom-in" style="background-color:#FFF1DB;")
-        h4 Nombre del banco
+        h4 Nombre y logo del banco emisor
         p.mt-3 Es el banco que emite la tarjeta, piense en un banco que conozca
 
       .mt-4.p-5.col-md-8.m-auto.content__info_billete.caja_flotante(v-if="item__4_tarjeta" data-aos="zoom-in" style="background-color:#FFF1DB;")
@@ -1502,7 +1518,7 @@
 
       .mt-4.p-5.col-md-8.m-auto.content__info_billete.caja_flotante(v-if="item__6_tarjeta" data-aos="zoom-in" style="background-color:#FFF1DB;")
         h4 Nombre del tarjetahabiente o nombre del titular
-        p.mt-3 el nombre del titular se encuentra en la parte frontal de la tarjeta y una vez revisado el estado del plástico, debe compararse el nombre que aquí aparece, con el que se muestra en el documento de identidad. Una vez realizada la transacción, el datáfono emite un comprobante de esta y allí debe verificarse una vez más que los nombres coincidan.
+        p.mt-3 El nombre del titular se encuentra en la parte frontal de la tarjeta y una vez revisado el estado del plástico, debe compararse el nombre que aquí aparece, con el que se muestra en el documento de identidad. Una vez realizada la transacción, el datáfono emite un comprobante de esta y allí debe verificarse una vez más que los nombres coincidan.
 
       .mt-4.p-5.col-md-8.m-auto.content__info_billete.caja_flotante(v-if="item__7_tarjeta" data-aos="zoom-in" style="background-color:#FFF1DB;")
         h4 Franquicia internacional
@@ -1530,11 +1546,11 @@
 
       .mt-4.p-5.col-md-8.m-auto.content__info_billete.caja_flotante(v-if="item__2_tarjeta2" data-aos="zoom-in" style="background-color:#FFF1DB;")
         h4 Código Seguridad o CVV
-        p.mt-3 (Card Verification Value), se encuentra en la parte de atrás del plástico y obedece a tres dígitos que son ajenos al número de la tarjeta. Este es un refuerzo de seguridad que se utiliza en transacciones no presenciales. En el caso de American Express, estas tarjetas llevan el código de seguridad impreso al frente en la parte superior derecha del numero de la tarjeta. Permite al banco verificar la originalidad de la tarjeta. En las tarjetas American Express este código va impreso en la parte frontal de la tarjeta.
+        p.mt-3 (#[em Card Verification Value]), se encuentra en la parte de atrás del plástico y obedece a tres dígitos que son ajenos al número de la tarjeta. Este es un refuerzo de seguridad que se utiliza en transacciones no presenciales. En el caso de American Express, estas tarjetas llevan el código de seguridad impreso al frente en la parte superior derecha del número de la tarjeta. Permite al banco verificar la originalidad de la tarjeta. En las tarjetas American Express este código va impreso en la parte frontal de la tarjeta.
 
       .mt-4.p-5.col-md-8.m-auto.content__info_billete.caja_flotante(v-if="item__3_tarjeta2" data-aos="zoom-in" style="background-color:#FFF1DB;")
         h4 Banda magnética
-        p.mt-3 Contiene información única e intransferible, que activa el proceso de validación entre el datáfono y la entidad, pero que se puede prestar para sobre ponerse de una tarjeta a otra, cobrando importancia nuevamente la comparación del voucher o soporte emitido por el TPV con la tarjeta física. Este elemento de seguridad guarda información de la tarjeta.
+        p.mt-3 Contiene información única e intransferible, que activa el proceso de validación entre el datáfono y la entidad, pero que se puede prestar para sobreponerse de una tarjeta a otra, cobrando importancia nuevamente la comparación del #[em voucher] o soporte emitido por el TPV con la tarjeta física. Este elemento de seguridad guarda información de la tarjeta.
 
     br
     .row.mt-5
@@ -1607,7 +1623,7 @@
           | Retirar y entregar la tarjeta al propietario.
 
     h4.mt-5(data-aos="fade-up") Nota:
-    p.mt-3(data-aos="fade-up") Si la tarjeta lleva impreso el símbolo de Wifi, significa que permite transacciones sin contacto, denominadas “Contact Less” en cuyo caso se siguen los mismos pasos de la venta con chip, pero en lugar de insertar el chip, se solicitará al huésped que acerque su plástico al lector del datáfono.
+    p.mt-3(data-aos="fade-up") Si la tarjeta lleva impreso el símbolo de #[em Wifi], significa que permite transacciones sin contacto, denominadas “#[em Contact Less]” en cuyo caso se siguen los mismos pasos de la venta con chip, pero en lugar de insertar el chip, se solicitará al huésped que acerque su plástico al lector del datáfono.
 
     p.mt-5(data-aos="fade-up") #[strong Al realizar ventas a través de TPV, es posible que se presenten algunas novedades, por lo que es relevante saber cómo actuar en ese caso.]
 
@@ -1735,7 +1751,7 @@
           | Cuando en el establecimiento se requiera el mantenimiento de los datáfonos, se debe tener presente que solo las personas autorizadas por Credibanco o Redeban Multicolor pueden tener acceso a la terminal, para lo cual se deben contactar a los números telefónicos autorizados para confirmar la identidad del funcionario.
         li(data-aos="fade-up")
           i.fas.fa-check(style="color:#FF9800;")
-          | Llevar un control de las visitas realizadas para el mantenimiento de datafonos. No permitir que personas extrañas manipulen o abran las terminales o que estas sean retiradas temporalmente del establecimiento así sea por corto tiempo.
+          | Llevar un control de las visitas realizadas para el mantenimiento de datáfonos. No permitir que personas extrañas manipulen o abran las terminales o que estas sean retiradas temporalmente del establecimiento así sea por corto tiempo.
         li(data-aos="fade-up")
           i.fas.fa-check(style="color:#FF9800;")
           | Mantener al personal del establecimiento capacitado.
@@ -1783,7 +1799,7 @@
     .mt-5.p-5.contenedor1
       figure.col-md-9.m-auto
         img.image_floating(src="@/assets/curso/tema3/114.svg")
-      p.mt-5(data-aos="fade-up") Estos pagos ocurren a través de las “pasarelas de pago”, que son servicios de pago electrónicos que puede ser utilizado online en una web (tienda online o cualquier otro tipo de web) o en una tienda física tradicional, para que los clientes puedan realizar sus pagos de forma segura y eficaz. Estas plataformas integran múltiples formas de pago, a saber:
+      p.mt-5(data-aos="fade-up") Estos pagos ocurren a través de las “pasarelas de pago”, que son servicios de pago electrónicos que puede ser utilizado #[em online] en una #[em web] (tienda #[em online] o cualquier otro tipo de #[em web]) o en una tienda física tradicional, para que los clientes puedan realizar sus pagos de forma segura y eficaz. Estas plataformas integran múltiples formas de pago, a saber:
        ul.lista-ul.mt-5
         li(data-aos="fade-up")
           i.fas.fa-check(style="color:#FF9800;")
@@ -1793,7 +1809,7 @@
           | Tarjetas débito: PSE.
         li(data-aos="fade-up")
           i.fas.fa-check(style="color:#FF9800;")
-          | Movimientos en efectivo: Terminales de recaudo como Baloto, Efecty, Todo Pagos.
+          | Movimientos en efectivo: terminales de recaudo como Baloto, Efecty, Todo Pagos.
         li(data-aos="fade-up")
           i.fas.fa-check(style="color:#FF9800;")
           | Billeteras Digitales: Nequi, Daviplata.
@@ -1881,7 +1897,7 @@
     .mt-5.p-5(style="background-color:#FFF1DB")
       .p-4.row(style="background-color:#fff")
         .col-md-5(style="place-self:center")
-          h5(data-aos="fade-up" style="color:#FF9800;") De esta manera el hotel requiere que, con cada reserva hecha, se envié una carta de garantía, en papel membretado y firmada por el contacto, donde se estipula
+          h5(data-aos="fade-up" style="color:#FF9800;") De esta manera el hotel requiere que, con cada reserva hecha, se envié una carta de garantía, en papel membretado y firmada por el contacto, donde se estipula:
         .col-md-1(style="place-self:center")
           figure.text-center
             img(src="@/assets/curso/tema3/122.svg" style="display:inline;max-width:100px;max-height:150px;")
@@ -1902,7 +1918,7 @@
       p.mt-3.mb-0(data-aos="fade-up") Es responsabilidad de la corporación que solicita crédito monitorear el uso autorizado del crédito.
 
     h3.mt-5(data-aos="fade-up") Procedimiento de manejo
-    p.mt-3(data-aos="fade-up") El siguiente procedimiento se utiliza para procesar un pago de factura a cuenta
+    p.mt-3(data-aos="fade-up") El siguiente procedimiento se utiliza para procesar un pago de factura a cuenta:
 
     br
     br
@@ -1941,7 +1957,7 @@
               li.mt-3(data-aos="fade-up")
                 .lista-ol--cuadro__vineta(style="background-color: #111E61;")
                   span b
-                | Verifique que exista la carta de garantía, para asegurarse de que el individuo está autorizado por el titular de la cuenta para facturar a la compañía
+                | Verifique que exista la carta de garantía, para asegurarse de que el individuo está autorizado por el titular de la cuenta para facturar a la compañía.
               li.mt-3(data-aos="fade-up")
                 .lista-ol--cuadro__vineta(style="background-color: #111E61;")
                   span c
@@ -1982,6 +1998,8 @@ export default {
   data: () => ({
     mostrarIndicador: true,
     mostrarIndicador2: true,
+    modal5_1: false,
+    modal5_2: false,
     text_dolar:
       'pase sus dedos por el billete. Deberá sentir que es algo áspero al tacto como resultado del proceso de impresión intaglio y la composición única del papel. El papel de la moneda de los EE. UU. es una mezcla de 75 por ciento de algodón y 25 por ciento de lino.',
     title_dolar: 'Toque el papel:',
@@ -2798,6 +2816,7 @@ export default {
   max-height: 83vh
 .img-infografica.color-secundario .img-infografica__item__dot:before, .img-infografica.color-secundario .img-infografica__item__dot:after
   background-color: #FF9800
+  border: 3px white solid
 .img-infografica__item__dot:before, .img-infografica__item__dot:after
   opacity: 1 !important
 .caja__activa:after
@@ -2817,6 +2836,13 @@ export default {
 @media (max-width: 990px)
   .image__formating
     margin:0px !important
+@media (max-width: 500px)
+  .order-xs-1
+    order: 1
+  .order-xs-2
+    order: 2
+  .order-xs-3
+    order: 3
 .contenedor1
   background: url('../assets/curso/tema3/115.svg')
   background-size: cover
@@ -2836,4 +2862,6 @@ export default {
   transform: translate(-50%, -50%)
   left: 50%
   z-index: 9
+.tarjeta--azul
+  background-color: #DEE4F0 !important
 </style>

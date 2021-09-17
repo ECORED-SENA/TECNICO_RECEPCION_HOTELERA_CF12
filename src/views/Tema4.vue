@@ -114,7 +114,7 @@
           figure.text-center
             img.image_floating(src="@/assets/curso/tema4/6.svg" style="display:inline;max-width:100px;")
 
-    p.mt-5(data-aos="fade-up") Se hace conveniente conocer estos posibles casos y, aunque en cada una deberá se deberán tomar diferentes resoluciones, el conocerlos ayudará a preparar una adecuada respuesta para estos. A continuación, se indica una lista de situaciones que menciona el autor Simón (2016, p. 79).
+    p.mt-5(data-aos="fade-up") Se hace conveniente conocer estos posibles casos y, aunque en cada una se deberán tomar diferentes resoluciones, el conocerlos ayudará a preparar una adecuada respuesta para estos. A continuación, se indica una lista de situaciones que menciona el autor Simón (2016, p. 79).
 
     .mt-5.p-5.caja_flotante(style="background-color:#FFF1DB")
       ul.lista-ul
