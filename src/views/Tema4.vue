@@ -7,7 +7,7 @@
         span 4
       h1 Cierre de factura
 
-    p(data-aos="fade-up") Como se ha visto, el proceso del Check out es un momento álgido de la estadía del huésped, ya que es en la salida donde el proceso de servicio finaliza, pero se refuerza con miras a que el cliente recompre. En este sentido, el proceso de Check out tiene unos pasos finales, luego de recibir el pago.
+    p(data-aos="fade-up") Como se ha visto, el proceso del #[em Check out] es un momento álgido de la estadía del huésped, ya que es en la salida donde el proceso de servicio finaliza, pero se refuerza con miras a que el cliente recompre. En este sentido, el proceso de #[em Check out] tiene unos pasos finales, luego de recibir el pago.
 
     br
     br
@@ -46,7 +46,7 @@
             img.image_floating(src="@/assets/curso/tema4/4.svg" style="max-width:200px;display:inline;" data-aos="fade-left")
         .col-lg-8
           .bloque-texto-a__texto.p-5.caja_escalada_hover(style="background-color: rgb(255 255 255 / 95%);height:100%;")
-            p(data-aos="fade-up") Una vez han culminado los procedimientos del Check out, es importante generar los soportes de ingreso de dinero que, a su vez, originan la expedición de la factura y el cierre del ciclo de estadía del huésped. 
+            p(data-aos="fade-up") Una vez han culminado los procedimientos del #[em Check out], es importante generar los soportes de ingreso de dinero que, a su vez, originan la expedición de la factura y el cierre del ciclo de estadía del huésped. 
             p.mt-3(data-aos="fade-up") Con lo anterior, el sistema deja la habitación en aseo, hasta que el departamento de habitaciones cambia su estatus a limpia una vez realizado el aseo. Sin embargo, estando en aseo es apta para la venta, es decir ya suma en las habitaciones disponibles para reservar.
 
     br
@@ -80,10 +80,10 @@
           | Organizar las facturas consecutivamente o por forma de pago
         li(data-aos="fade-up")
           i.fas.fa-check(style="color:#FF9800;")
-          | En los pagos de tarjeta de crédito, es útil grapar los cupones de pago a las facturas, este simple proceso ayudará a verificar si el ingreso de información en el PMS fue correcto al momento del Check out.
+          | En los pagos de tarjeta de crédito, es útil grapar los cupones de pago a las facturas, este simple proceso ayudará a verificar si el ingreso de información en el PMS fue correcto al momento del #[em Check out].
         li(data-aos="fade-up")
           i.fas.fa-check(style="color:#FF9800;")
-          | Los documentos diferentes a facturas, como Paid Outs, cambios de moneda y otros que afecten el movimiento, deben ser organizados aparte, igualmente por consecutivo o manteniendo un orden que permita identificar que no hay ausencia de soportes.
+          | Los documentos diferentes a facturas, como #[em Paid Outs], cambios de moneda y otros que afecten el movimiento, deben ser organizados aparte, igualmente por consecutivo o manteniendo un orden que permita identificar que no hay ausencia de soportes.
 
     p.mt-5(data-aos="fade-up") De esta forma, al realizar una revisión del movimiento, se podrá contrastar la información contra la documentación física y fácilmente ubicar posibles errores.
 
@@ -95,7 +95,7 @@
     .mt-5.p-5(style="background-color:#FFF1DB")
       .p-4.row(style="background-color:#fff")
         .col-md-5(style="place-self:center")
-          h5(data-aos="fade-up" style="color:#FF9800;") Se ha mencionado que el registro de salida (Check out) es el momento de la verdad, toda vez que impacta de forma directa en la experiencia del huésped, durante este proceso se enfrentarán algunas situaciones que se enmarcan en tres grupos:
+          h5(data-aos="fade-up" style="color:#FF9800;") Se ha mencionado que el registro de salida (#[em Check out]) es el momento de la verdad, toda vez que impacta de forma directa en la experiencia del huésped, durante este proceso se enfrentarán algunas situaciones que se enmarcan en tres grupos:
         .col-md-1(style="place-self:center")
           figure.text-center
             img(src="@/assets/curso/tema3/122.svg" style="display:inline;max-width:100px;max-height:150px;")

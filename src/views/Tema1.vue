@@ -16,7 +16,7 @@
           .bloque-texto-a__texto.p-5.caja_escalada_hover(style="background-color: rgb(255 255 255 / 95%);height:100%;")
             p(data-aos="fade-up") Se denomina así al proceso en el que el huésped termina su estadía, liquida su cuenta y deja el hotel, culminando el denominado ciclo del huésped; este procedimiento se informa a los otros departamentos.
 
-    p.mt-5(data-aos="fade-up") Aunque no existe una hora estándar, la mayoría de los establecimientos de alojamiento fijan su hora de Check out alrededor del mediodía, ya que de esta depende también la implementación de una hora de Check in, teniendo en cuenta que la diferencia es el tiempo utilizado para aplicar los protocolos de limpieza y desinfección, garantizando la correcta asepsia de la habitación. Una vez establecida la hora de salida, es importante comunicársela al huésped al momento de su ingreso al hotel, como parte del proceso de registro (Check in).
+    p.mt-5(data-aos="fade-up") Aunque no existe una hora estándar, la mayoría de los establecimientos de alojamiento fijan su hora de #[em Check out] alrededor del mediodía, ya que de esta depende también la implementación de una hora de #[em Check in], teniendo en cuenta que la diferencia es el tiempo utilizado para aplicar los protocolos de limpieza y desinfección, garantizando la correcta asepsia de la habitación. Una vez establecida la hora de salida, es importante comunicársela al huésped al momento de su ingreso al hotel, como parte del proceso de registro (#[em Check in]).
 
     .row.mt-5
       .col-md-5
@@ -43,7 +43,7 @@
     .tarjeta-avatar-b.mb-5
         img.image_floating(src='@/assets/curso/tema1/3.svg' alt='' data-aos="fade-left")
         .tarjeta.caja_flotante(style="background-color: #FFF1DB;")
-          .p-5(data-aos="fade-up") Es un procedimiento que se debe realizar en el turno de la tarde, cuyo propósito es verificar que las personas con fecha de salida para ese día y que aún no han legalizado su salida lo hagan o informen si van a tomar el servicio de alojamiento más tiempo. Este proceso es utilizado en los días en que la disponibilidad es restringida y previene de una posible sobreventa (Overbooking).
+          .p-5(data-aos="fade-up") Es un procedimiento que se debe realizar en el turno de la tarde, cuyo propósito es verificar que las personas con fecha de salida para ese día y que aún no han legalizado su salida lo hagan o informen si van a tomar el servicio de alojamiento más tiempo. Este proceso es utilizado en los días en que la disponibilidad es restringida y previene de una posible sobreventa (#[em Overbooking]).
 
     br
     br
@@ -53,7 +53,7 @@
     .tarjeta-avatar-b.mb-5
         img.image_floating(src='@/assets/curso/tema1/4.svg' alt='' data-aos="fade-left")
         .tarjeta.caja_flotante(style="background-color: #FFF1DB;")
-          .p-5(data-aos="fade-up") También conocidas como Early Departure, son aquellas reservas que no completan el periodo de estadía planteado inicialmente, dejando el hotel antes de lo previsto. En muchos establecimientos, cuando esto se anuncia posterior a la hora fijada como límite de #[em Check out], se realiza un cobro que va entre el 50 % y el 100 % del valor de la noche, dependiendo de la política fijada, la cual depende, básicamente, de la demanda y la posibilidad de ocupar esa habitación que va a quedar disponible.
+          .p-5(data-aos="fade-up") También conocidas como #[em Early Departure], son aquellas reservas que no completan el periodo de estadía planteado inicialmente, dejando el hotel antes de lo previsto. En muchos establecimientos, cuando esto se anuncia posterior a la hora fijada como límite de #[em Check out], se realiza un cobro que va entre el 50 % y el 100 % del valor de la noche, dependiendo de la política fijada, la cual depende, básicamente, de la demanda y la posibilidad de ocupar esa habitación que va a quedar disponible.
 
 
 

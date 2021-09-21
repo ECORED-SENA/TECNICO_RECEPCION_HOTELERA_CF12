@@ -44,7 +44,19 @@
             h3 Billete de cien mil pesos
             p.mt-2 A partir del 31 de marzo de 2016 el Banco de la República introdujo al mercado el nuevo billete de $100 mil, el primero de la nueva familia. La imagen del presidente Carlos Lleras Restrepo junto con el pájaro barranquero y la flor del sietecueros son la imagen del nuevo billete.
 
-            h4.mt-4 Tocar, Observar, Girar, Comprobar 
+            .row.mt-5
+              .col-md-3(style="display:inline-flex;")
+                p.bullet(style="background-color:#B01A29;")
+                h4.mt-1 &nbsp;&nbsp;&nbsp;&nbsp;Tocar
+              .col-md-3(style="display:inline-flex;")
+                p.bullet(style="background-color:#E8A817;")
+                h4.mt-1 &nbsp;&nbsp;&nbsp;&nbsp;Observar
+              .col-md-3(style="display:inline-flex;")
+                p.bullet(style="background-color:#4A762E;")
+                h4.mt-1 &nbsp;&nbsp;&nbsp;&nbsp;Girar
+              .col-md-3(style="display:inline-flex;")
+                p.bullet(style="background-color:#642A95;")
+                h4.mt-1 &nbsp;&nbsp;&nbsp;&nbsp;Comprobar
 
           div(v-if="!reverso100")
             .img-infografica.color-secundario.mt-4(data-aos="zoom-in")
@@ -53,29 +65,29 @@
                   img.image__base.image_floating(src='@/assets/curso/tema3/2.svg' alt='')
               .img-infografica__content
                 .img-infografica__item(style='top: 15%; left: 11%;' @click="mostrar_item1")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__1")
+                  .img-infografica__item__dot.bullet_rojo
+                  .img-infografica__item_raya.bullet_rojo(style="top: 15%;" v-if="item__1")
                 .img-infografica__item(style='top: 80%; left: 33%;' @click="mostrar_item2")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 50%;" v-if="item__2")
+                  .img-infografica__item__dot.bullet_rojo
+                  .img-infografica__item_raya.bullet_rojo(style="top: 50%;" v-if="item__2")
                 .img-infografica__item(style='top: 78%; left: 98%;' @click="mostrar_item3")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 70%;" v-if="item__3")
+                  .img-infografica__item__dot.bullet_rojo
+                  .img-infografica__item_raya.bullet_rojo(style="top: 70%;" v-if="item__3")
                 .img-infografica__item(style='top: 68%; left: 24%;' @click="mostrar_item4")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 70%;" v-if="item__4")
+                  .img-infografica__item__dot.bullet_amarillo
+                  .img-infografica__item_raya.bullet_amarillo(style="top: 70%;" v-if="item__4")
                 .img-infografica__item(style='top: 24%; left: 74%;' @click="mostrar_item5")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 70%;" v-if="item__5")
+                  .img-infografica__item__dot.bullet_verde
+                  .img-infografica__item_raya.bullet_verde(style="top: 70%;" v-if="item__5")
                 .img-infografica__item(style='top: 49%; left: 30%;' @click="mostrar_item6")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 70%;" v-if="item__6")
+                  .img-infografica__item__dot.bullet_verde
+                  .img-infografica__item_raya.bullet_verde(style="top: 70%;" v-if="item__6")
                 .img-infografica__item(style='top: 16%; left: 91%;' @click="mostrar_item7")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 70%;" v-if="item__7")
+                  .img-infografica__item__dot.bullet_morado
+                  .img-infografica__item_raya.bullet_morado(style="top: 70%;" v-if="item__7")
                 .img-infografica__item(style='top: 25%; left: 91%;' @click="mostrar_item8")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 70%;" v-if="item__8")
+                  .img-infografica__item__dot.bullet_morado
+                  .img-infografica__item_raya.bullet_morado(style="top: 70%;" v-if="item__8")
             
             div(style="position:relative;z-index:2;background-color:white;")
               .mt-5.row.content__info_billete(v-if="item__1" data-aos="zoom-in")
@@ -155,26 +167,26 @@
                   img.image__base.image_floating(src='@/assets/curso/tema3/13.svg' alt='')
               .img-infografica__content
                 .img-infografica__item(style='top: 15%; left: 11%;' @click="mostrar_item1")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__1")
+                  .img-infografica__item__dot.bullet_rojo
+                  .img-infografica__item_raya.bullet_rojo(style="top: 15%;" v-if="item__1")
                 .img-infografica__item(style='top: 75%; left: 25%;' @click="mostrar_item2")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 50%;" v-if="item__2")
+                  .img-infografica__item__dot.bullet_verde
+                  .img-infografica__item_raya.bullet_verde(style="top: 50%;" v-if="item__2")
                 .img-infografica__item(style='top: 37%; left: 31%;' @click="mostrar_item3")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 50%;" v-if="item__3")
+                  .img-infografica__item__dot.bullet_morado
+                  .img-infografica__item_raya.bullet_morado(style="top: 50%;" v-if="item__3")
                 .img-infografica__item(style='top: 24%; left: 42%;' @click="mostrar_item4")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 50%;" v-if="item__4")
+                  .img-infografica__item__dot.bullet_amarillo
+                  .img-infografica__item_raya.bullet_amarillo(style="top: 50%;" v-if="item__4")
                 .img-infografica__item(style='top: 79%; left: 72%;' @click="mostrar_item5")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 50%;" v-if="item__5")
+                  .img-infografica__item__dot.bullet_amarillo
+                  .img-infografica__item_raya.bullet_amarillo(style="top: 50%;" v-if="item__5")
                 .img-infografica__item(style='top: 19%; left: 93%;' @click="mostrar_item6")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 50%;" v-if="item__6")
+                  .img-infografica__item__dot.bullet_rojo
+                  .img-infografica__item_raya.bullet_rojo(style="top: 50%;" v-if="item__6")
                 .img-infografica__item(style='top: 53%; left: 39%;' @click="mostrar_item7")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 50%;" v-if="item__7")
+                  .img-infografica__item__dot.bullet_verde
+                  .img-infografica__item_raya.bullet_verde(style="top: 50%;" v-if="item__7")
             
             div(style="position:relative;z-index:2;background-color:white;")
               .mt-5.row.content__info_billete(v-if="item__1" data-aos="zoom-in")
@@ -263,7 +275,19 @@
             h3 Billete de cincuenta mil pesos
             p.mt-2 A partir del viernes 19 de agosto de 2016 el Banco de la República introdujo al mercado el nuevo billete de $50 mil, el tercero de la nueva familia. Ciudad Perdida (núcleo de la cultura Tayrona), la Sierra Nevada de Santa Marta, un colibrí picando una flor y un caracol burgao, junto con el nobel de literatura Gabriel García Márquez son la imagen del nuevo billete. Este billete circulará simultáneamente con el actual.
 
-            h4.mt-4 Tocar, Observar, Girar, Comprobar 
+            .row.mt-5
+              .col-md-3(style="display:inline-flex;")
+                p.bullet(style="background-color:#B01A29;")
+                h4.mt-1 &nbsp;&nbsp;&nbsp;&nbsp;Tocar
+              .col-md-3(style="display:inline-flex;")
+                p.bullet(style="background-color:#E8A817;")
+                h4.mt-1 &nbsp;&nbsp;&nbsp;&nbsp;Observar
+              .col-md-3(style="display:inline-flex;")
+                p.bullet(style="background-color:#4A762E;")
+                h4.mt-1 &nbsp;&nbsp;&nbsp;&nbsp;Girar
+              .col-md-3(style="display:inline-flex;")
+                p.bullet(style="background-color:#642A95;")
+                h4.mt-1 &nbsp;&nbsp;&nbsp;&nbsp;Comprobar 
 
           div(v-if="!reverso50")
             .img-infografica.color-secundario.mt-4(data-aos="zoom-in")
@@ -272,32 +296,32 @@
                   img.image__base.image_floating(src='@/assets/curso/tema3/22.svg' alt='')
               .img-infografica__content
                 .img-infografica__item(style='top: 42%; left: 5%;' @click="mostrar_item1_50")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__1_50")
+                  .img-infografica__item__dot.bullet_amarillo
+                  .img-infografica__item_raya.bullet_amarillo(style="top: 15%;" v-if="item__1_50")
                 .img-infografica__item(style='top: 11%; left: 14%;' @click="mostrar_item2_50")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__2_50")
+                  .img-infografica__item__dot.bullet_rojo
+                  .img-infografica__item_raya.bullet_rojo(style="top: 15%;" v-if="item__2_50")
                 .img-infografica__item(style='top: 16%; left: 37%;' @click="mostrar_item3_50")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__3_50")
+                  .img-infografica__item__dot.bullet_morado
+                  .img-infografica__item_raya.bullet_morado(style="top: 15%;" v-if="item__3_50")
                 .img-infografica__item(style='top: 48%; left: 36%;' @click="mostrar_item4_50")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__4_50")
+                  .img-infografica__item__dot.bullet_verde
+                  .img-infografica__item_raya.bullet_verde(style="top: 15%;" v-if="item__4_50")
                 .img-infografica__item(style='top: 39%; left: 64%;' @click="mostrar_item5_50")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__5_50")
+                  .img-infografica__item__dot.bullet_verde
+                  .img-infografica__item_raya.bullet_verde(style="top: 15%;" v-if="item__5_50")
                 .img-infografica__item(style='top: 73%; left: 30%;' @click="mostrar_item6_50")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__6_50")
+                  .img-infografica__item__dot.bullet_amarillo
+                  .img-infografica__item_raya.bullet_amarillo(style="top: 15%;" v-if="item__6_50")
                 .img-infografica__item(style='top: 88%; left: 38%;' @click="mostrar_item7_50")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__7_50")
+                  .img-infografica__item__dot.bullet_rojo
+                  .img-infografica__item_raya.bullet_rojo(style="top: 15%;" v-if="item__7_50")
                 .img-infografica__item(style='top: 60%; left: 54%;' @click="mostrar_item8_50")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__8_50")
+                  .img-infografica__item__dot.bullet_morado
+                  .img-infografica__item_raya.bullet_morado(style="top: 15%;" v-if="item__8_50")
                 .img-infografica__item(style='top: 81%; left: 98%;' @click="mostrar_item9_50")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__9_50")
+                  .img-infografica__item__dot.bullet_rojo
+                  .img-infografica__item_raya.bullet_rojo(style="top: 15%;" v-if="item__9_50")
             
             div(style="position:relative;z-index:2;background-color:white;")
               .mt-5.row.content__info_billete(v-if="item__1_50" data-aos="zoom-in")
@@ -395,26 +419,26 @@
                   img.image__base.image_floating(src='@/assets/curso/tema3/32.svg' alt='')
               .img-infografica__content
                 .img-infografica__item(style='top: 15%; left: 16%;' @click="mostrar_item1_50")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__1_50")
+                  .img-infografica__item__dot.bullet_rojo
+                  .img-infografica__item_raya.bullet_rojo(style="top: 15%;" v-if="item__1_50")
                 .img-infografica__item(style='top: 34%; left: 14%;' @click="mostrar_item2_50")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__2_50")
+                  .img-infografica__item__dot.bullet_rojo
+                  .img-infografica__item_raya.bullet_rojo(style="top: 15%;" v-if="item__2_50")
                 .img-infografica__item(style='top: 29%; left: 40%;' @click="mostrar_item3_50")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__3_50")
+                  .img-infografica__item__dot.bullet_amarillo
+                  .img-infografica__item_raya.bullet_amarillo(style="top: 15%;" v-if="item__3_50")
                 .img-infografica__item(style='top: 75%; left: 71%;' @click="mostrar_item4_50")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__4_50")
+                  .img-infografica__item__dot.bullet_amarillo
+                  .img-infografica__item_raya.bullet_amarillo(style="top: 15%;" v-if="item__4_50")
                 .img-infografica__item(style='top: 60%; left: 14%;' @click="mostrar_item5_50")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__5_50")
+                  .img-infografica__item__dot.bullet_morado
+                  .img-infografica__item_raya.bullet_morado(style="top: 15%;" v-if="item__5_50")
                 .img-infografica__item(style='top: 26%; left: 49%;' @click="mostrar_item6_50")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__6_50")
+                  .img-infografica__item__dot.bullet_rojo
+                  .img-infografica__item_raya.bullet_rojo(style="top: 15%;" v-if="item__6_50")
                 .img-infografica__item(style='top: 52%; left: 40%;' @click="mostrar_item7_50")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__7_50")
+                  .img-infografica__item__dot.bullet_verde
+                  .img-infografica__item_raya.bullet_verde(style="top: 15%;" v-if="item__7_50")
                
             
             div(style="position:relative;z-index:2;background-color:white;")
@@ -512,7 +536,19 @@
             h3 Billete de veinte mil pesos
             p.mt-2 A partir del jueves 30 de junio de 2016 el Banco de la República introdujo al mercado el nuevo billete de $20 mil, el segundo de la nueva familia. Los canales de La Mojana en la región donde se asentó el pueblo zenú, el fruto del anón, la orejera zenú y el sombrero vueltia’o, junto con el presidente Alfonso López Michelsen, son la imagen del nuevo billete. Este billete circulará simultáneamente con el actual.
 
-            h4.mt-4 Tocar, Observar, Girar, Comprobar 
+            .row.mt-5
+              .col-md-3(style="display:inline-flex;")
+                p.bullet(style="background-color:#B01A29;")
+                h4.mt-1 &nbsp;&nbsp;&nbsp;&nbsp;Tocar
+              .col-md-3(style="display:inline-flex;")
+                p.bullet(style="background-color:#E8A817;")
+                h4.mt-1 &nbsp;&nbsp;&nbsp;&nbsp;Observar
+              .col-md-3(style="display:inline-flex;")
+                p.bullet(style="background-color:#4A762E;")
+                h4.mt-1 &nbsp;&nbsp;&nbsp;&nbsp;Girar
+              .col-md-3(style="display:inline-flex;")
+                p.bullet(style="background-color:#642A95;")
+                h4.mt-1 &nbsp;&nbsp;&nbsp;&nbsp;Comprobar 
 
           div(v-if="!reverso20")
             .img-infografica.color-secundario.mt-4(data-aos="zoom-in")
@@ -521,29 +557,29 @@
                   img.image__base.image_floating(src='@/assets/curso/tema3/39.svg' alt='')
               .img-infografica__content
                 .img-infografica__item(style='top: 15%; left: 7%;' @click="mostrar_item1_20")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__1_20")
+                  .img-infografica__item__dot.bullet_rojo
+                  .img-infografica__item_raya.bullet_rojo(style="top: 15%;" v-if="item__1_20")
                 .img-infografica__item(style='top: 41%; left: 6%;' @click="mostrar_item2_20")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__2_20")
+                  .img-infografica__item__dot.bullet_amarillo
+                  .img-infografica__item_raya.bullet_amarillo(style="top: 15%;" v-if="item__2_20")
                 .img-infografica__item(style='top: 61%; left: 16%;' @click="mostrar_item3_20")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__3_20")
+                  .img-infografica__item__dot.bullet_amarillo
+                  .img-infografica__item_raya.bullet_amarillo(style="top: 15%;" v-if="item__3_20")
                 .img-infografica__item(style='top: 34%; left: 60%;' @click="mostrar_item4_20")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__4_20")
+                  .img-infografica__item__dot.bullet_verde
+                  .img-infografica__item_raya.bullet_verde(style="top: 15%;" v-if="item__4_20")
                 .img-infografica__item(style='top: 94%; left: 17%;' @click="mostrar_item5_20")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__5_20")
+                  .img-infografica__item__dot.bullet_verde
+                  .img-infografica__item_raya.bullet_verde(style="top: 15%;" v-if="item__5_20")
                 .img-infografica__item(style='top: 83%; left: 38%;' @click="mostrar_item6_20")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__6_20")
+                  .img-infografica__item__dot.bullet_verde
+                  .img-infografica__item_raya.bullet_verde(style="top: 15%;" v-if="item__6_20")
                 .img-infografica__item(style='top: 68%; left: 63%;' @click="mostrar_item7_20")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__7_20")
+                  .img-infografica__item__dot.bullet_verde
+                  .img-infografica__item_raya.bullet_verde(style="top: 15%;" v-if="item__7_20")
                 .img-infografica__item(style='top: 26%; left: 89%;' @click="mostrar_item8_20")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__8_20")
+                  .img-infografica__item__dot.bullet_morado
+                  .img-infografica__item_raya.bullet_morado(style="top: 15%;" v-if="item__8_20")
             
             div(style="position:relative;z-index:2;background-color:white;")
               .mt-5.row.content__info_billete(v-if="item__1_20" data-aos="zoom-in")
@@ -568,7 +604,7 @@
                 .col-md-1
                 .col-md-2
                   figure
-                    img.image_floating(src="@/assets/curso/tema3/42.svg" style="max-width:200px;" data-aos="fade-up")
+                    img.image_floating(src="@/assets/curso/tema3/44.svg" style="max-width:200px;" data-aos="fade-up")
                 .col-md-5(style="place-self:center;")
                   .p-3(style="background-color:#FF9800;border-radius:8px;" data-aos="fade-up")
                     p.mb-0.text-white MARCAS DE AGUA - Al lado izquierdo del billete se descubre al trasluz el rostro del presidente, con efecto tridimensional, y el número "20".
@@ -581,7 +617,7 @@
                     p.mb-0.text-white  IMAGEN OCULTA (LATENTE - Al lado izquierdo del rostro, en la franja de tonalidades café y naranja, al observar el billete en posición casi horizontal desde la esquina inferior derecha a la altura de los ojos, se visualiza el texto "BRC".
                 .col-md-2
                   figure
-                    img.image_floating(src="@/assets/curso/tema3/43.svg" style="max-width:200px;" data-aos="fade-up")
+                    img.image_floating(src="@/assets/curso/tema3/42.svg" style="max-width:200px;" data-aos="fade-up")
                 .col-md-3
 
             div(style="position:relative;z-index:2;background-color:white;")
@@ -589,7 +625,7 @@
                 .col-md-1
                 .col-md-2
                   figure
-                    img.image_floating(src="@/assets/curso/tema3/44.svg" style="max-width:200px;" data-aos="fade-up")
+                    img.image_floating(src="@/assets/curso/tema3/45.svg" style="max-width:200px;" data-aos="fade-up")
                 .col-md-5(style="place-self:center;")
                   .p-3(style="background-color:#FF9800;border-radius:8px;" data-aos="fade-up")
                     p.mb-0.text-white Textos: "BANCO DE LA REPÚBLICA" y "COLOMBIA".
@@ -599,7 +635,7 @@
                 .col-md-4
                 .col-md-2
                   figure
-                    img.image_floating(src="@/assets/curso/tema3/45.svg" style="max-width:200px;" data-aos="fade-up")
+                    img.image_floating(src="@/assets/curso/tema3/46.svg" style="max-width:200px;" data-aos="fade-up")
                 .col-md-5(style="place-self:center;")
                   .p-3(style="background-color:#FF9800;border-radius:8px;" data-aos="fade-up")
                     p.mb-0.text-white Nombre común y científico del fruto del ANÓN.
@@ -612,7 +648,7 @@
                     p.mb-0.text-white Franjas onduladas a los lados del rostro.
                 .col-md-2
                   figure
-                    img.image_floating(src="@/assets/curso/tema3/46.svg" style="max-width:200px;" data-aos="fade-up")
+                    img.image_floating(src="@/assets/curso/tema3/46-1.png" style="max-width:200px;" data-aos="fade-up")
                 .col-md-3
 
             div(style="position:relative;z-index:2;background-color:white;")
@@ -623,7 +659,7 @@
                     p.mb-0.text-white En la franja de color naranja, ubicada a la derecha del rostro, se encuentran los textos "BANCO DE LA REPÚBLICA" y "BRC".
                 .col-md-2
                   figure
-                    img.image_floating(src="@/assets/curso/tema3/46-1.png" style="max-width:200px;" data-aos="fade-up")
+                    img.image_floating(src="@/assets/curso/tema3/43.svg" style="max-width:200px;" data-aos="fade-up")
 
           div(v-if="reverso20")
             .img-infografica.color-secundario.mt-4(data-aos="zoom-in")
@@ -632,29 +668,29 @@
                   img.image__base.image_floating(src='@/assets/curso/tema3/47.svg' alt='')
               .img-infografica__content
                 .img-infografica__item(style='top: 19%; left: 6%;' @click="mostrar_item1_20")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__1_20")
+                  .img-infografica__item__dot.bullet_rojo
+                  .img-infografica__item_raya.bullet_rojo(style="top: 15%;" v-if="item__1_20")
                 .img-infografica__item(style='top: 79%; left: 39%;' @click="mostrar_item2_20")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__2_20")
+                  .img-infografica__item__dot.bullet_amarillo
+                  .img-infografica__item_raya.bullet_amarillo(style="top: 15%;" v-if="item__2_20")
                 .img-infografica__item(style='top: 67%; left: 74%;' @click="mostrar_item3_20")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__3_20")
+                  .img-infografica__item__dot.bullet_amarillo
+                  .img-infografica__item_raya.bullet_amarillo(style="top: 15%;" v-if="item__3_20")
                 .img-infografica__item(style='top: 28%; left: 39%;' @click="mostrar_item4_20")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__4_20")
+                  .img-infografica__item__dot.bullet_verde
+                  .img-infografica__item_raya.bullet_verde(style="top: 15%;" v-if="item__4_20")
                 .img-infografica__item(style='top: 84%; left: 12%;' @click="mostrar_item5_20")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__5_20")
+                  .img-infografica__item__dot.bullet_verde
+                  .img-infografica__item_raya.bullet_verde(style="top: 15%;" v-if="item__5_20")
                 .img-infografica__item(style='top: 17%; left: 90%;' @click="mostrar_item6_20")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__6_20")
+                  .img-infografica__item__dot.bullet_verde
+                  .img-infografica__item_raya.bullet_verde(style="top: 15%;" v-if="item__6_20")
                 .img-infografica__item(style='top: 79%; left: 55%;' @click="mostrar_item7_20")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__7_20")
+                  .img-infografica__item__dot.bullet_morado
+                  .img-infografica__item_raya.bullet_morado(style="top: 15%;" v-if="item__7_20")
                 .img-infografica__item(style='top: 21%; left: 83%;' @click="mostrar_item8_20")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__8_20")
+                  .img-infografica__item__dot.bullet_morado
+                  .img-infografica__item_raya.bullet_morado(style="top: 15%;" v-if="item__8_20")
                
             
             div(style="position:relative;z-index:2;background-color:white;")
@@ -760,7 +796,19 @@
             h3 Billete de diez mil pesos
             p.mt-2 A partir del miércoles 07 de diciembre de 2016 el Banco de la República introdujo al mercado el nuevo billete de $10 mil, el sexto y último de la nueva familia. La antropóloga Virginia Gutiérrez, junto con la región amazónica, la flor de la Victoria regia y la rana arborícola son la imagen del nuevo billete.
 
-            h4.mt-4 Tocar, Observar, Girar, Comprobar 
+            .row.mt-5
+              .col-md-3(style="display:inline-flex;")
+                p.bullet(style="background-color:#B01A29;")
+                h4.mt-1 &nbsp;&nbsp;&nbsp;&nbsp;Tocar
+              .col-md-3(style="display:inline-flex;")
+                p.bullet(style="background-color:#E8A817;")
+                h4.mt-1 &nbsp;&nbsp;&nbsp;&nbsp;Observar
+              .col-md-3(style="display:inline-flex;")
+                p.bullet(style="background-color:#4A762E;")
+                h4.mt-1 &nbsp;&nbsp;&nbsp;&nbsp;Girar
+              .col-md-3(style="display:inline-flex;")
+                p.bullet(style="background-color:#642A95;")
+                h4.mt-1 &nbsp;&nbsp;&nbsp;&nbsp;Comprobar 
 
           div(v-if="!reverso10")
             .img-infografica.color-secundario.mt-4(data-aos="zoom-in")
@@ -769,32 +817,32 @@
                   img.image__base.image_floating(src='@/assets/curso/tema3/56.svg' alt='')
               .img-infografica__content
                 .img-infografica__item(style='top: 18%; left: 6%;' @click="mostrar_item1_10")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__1_10")
+                  .img-infografica__item__dot.bullet_rojo
+                  .img-infografica__item_raya.bullet_rojo(style="top: 15%;" v-if="item__1_10")
                 .img-infografica__item(style='top: 18%; left: 90%;' @click="mostrar_item2_10")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__2_10")
+                  .img-infografica__item__dot.bullet_rojo
+                  .img-infografica__item_raya.bullet_rojo(style="top: 15%;" v-if="item__2_10")
                 .img-infografica__item(style='top: 84%; left: 6%;' @click="mostrar_item3_10")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__3_10")
+                  .img-infografica__item__dot.bullet_rojo
+                  .img-infografica__item_raya.bullet_rojo(style="top: 15%;" v-if="item__3_10")
                 .img-infografica__item(style='top: 32%; left: 5%;' @click="mostrar_item4_10")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__4_10")
+                  .img-infografica__item__dot.bullet_amarillo
+                  .img-infografica__item_raya.bullet_amarillo(style="top: 15%;" v-if="item__4_10")
                 .img-infografica__item(style='top: 48%; left: 19%;' @click="mostrar_item5_10")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__5_10")
+                  .img-infografica__item__dot.bullet_amarillo
+                  .img-infografica__item_raya.bullet_amarillo(style="top: 15%;" v-if="item__5_10")
                 .img-infografica__item(style='top: 69%; left: 30%;' @click="mostrar_item6_10")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__6_10")
+                  .img-infografica__item__dot.bullet_amarillo
+                  .img-infografica__item_raya.bullet_amarillo(style="top: 15%;" v-if="item__6_10")
                 .img-infografica__item(style='top: 44%; left: 30%;' @click="mostrar_item7_10")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__7_10")
+                  .img-infografica__item__dot.bullet_verde
+                  .img-infografica__item_raya.bullet_verde(style="top: 15%;" v-if="item__7_10")
                 .img-infografica__item(style='top: 34%; left: 61%;' @click="mostrar_item8_10")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__8_10")
+                  .img-infografica__item__dot.bullet_verde
+                  .img-infografica__item_raya.bullet_verde(style="top: 15%;" v-if="item__8_10")
                 .img-infografica__item(style='top: 36%; left: 40%;' @click="mostrar_item9_10")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__9_10")
+                  .img-infografica__item__dot.bullet_morado
+                  .img-infografica__item_raya.bullet_morado(style="top: 15%;" v-if="item__9_10")
             
             div(style="position:relative;z-index:2;background-color:white;")
               .mt-5.row.content__info_billete(v-if="item__1_10" data-aos="zoom-in")
@@ -890,20 +938,20 @@
                   img.image__base.image_floating(src='@/assets/curso/tema3/66.svg' alt='')
               .img-infografica__content
                 .img-infografica__item(style='top: 22%; left: 39%;' @click="mostrar_item1_10")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__1_10")
+                  .img-infografica__item__dot.bullet_amarillo
+                  .img-infografica__item_raya.bullet_amarillo(style="top: 15%;" v-if="item__1_10")
                 .img-infografica__item(style='top: 68%; left: 69%;' @click="mostrar_item2_10")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__2_10")
+                  .img-infografica__item__dot.bullet_amarillo
+                  .img-infografica__item_raya.bullet_amarillo(style="top: 15%;" v-if="item__2_10")
                 .img-infografica__item(style='top: 52%; left: 39%;' @click="mostrar_item3_10")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__3_10")
+                  .img-infografica__item__dot.bullet_verde
+                  .img-infografica__item_raya.bullet_verde(style="top: 15%;" v-if="item__3_10")
                 .img-infografica__item(style='top: 89%; left: 28%;' @click="mostrar_item4_10")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__4_10")
+                  .img-infografica__item__dot.bullet_morado
+                  .img-infografica__item_raya.bullet_morado(style="top: 15%;" v-if="item__4_10")
                 .img-infografica__item(style='top: 17%; left: 77%;' @click="mostrar_item5_10")
-                  .img-infografica__item__dot
-                  .img-infografica__item_raya(style="top: 15%;" v-if="item__5_10")
+                  .img-infografica__item__dot.bullet_morado
+                  .img-infografica__item_raya.bullet_morado(style="top: 15%;" v-if="item__5_10")
             
             div(style="position:relative;z-index:2;background-color:white;")
               .mt-5.row.content__info_billete(v-if="item__1_10" data-aos="zoom-in")
@@ -981,7 +1029,7 @@
         .indicador--click(v-if="mostrarIndicador")
       .col-md-4.mb-3.m-auto
         figure
-          img.image_floating.image__modal(src="@/assets/curso/tema3/74.svg" @click="modal5_1 = true" data-aos="zoom-in" @mouseover="mostrarIndicador = false")
+          img.image_floating.image__modal(src="@/assets/curso/tema3/74.svg" @click="modal5_2 = true" data-aos="zoom-in" @mouseover="mostrarIndicador = false")
         .indicador--click(v-if="mostrarIndicador")
 
         ModalA(:abrir-modal.sync="modal5")
@@ -1217,7 +1265,7 @@
           img.image_floating(src="@/assets/curso/tema3/87.svg" data-aos="fade-left" style="display:inline;max-width:200px")
 
     h3.mt-5(data-aos="fade-up") Dólares
-    p.mt-3(data-aos="fade-up") La Junta de la Reserva Federal de los EE. UU. emite billetes de USD$1, USD$2, USD$5, USD$10, USD$20, USD$50 y USD$100. El Gobierno de los EE. UU. rediseña periódicamente los billetes de la Reserva Federal para que sean más fáciles de usar, pero más difíciles de falsificar. El estilo actual de billetes se muestra a continuación:
+    p.mt-3(data-aos="fade-up") La Junta de la Reserva Federal de los EE. UU. emite billetes de USD 1, USD 2, USD 5, USD 10, USD 20, USD$ 0 y USD 100. El Gobierno de los EE. UU. rediseña periódicamente los billetes de la Reserva Federal para que sean más fáciles de usar, pero más difíciles de falsificar. El estilo actual de billetes se muestra a continuación:
 
     .col-md-6.m-auto
       h4.mt-5.text-center(data-aos="fade-up") Elementos de seguridad de billetes
@@ -1239,7 +1287,7 @@
         .p-4.text-center.caja__interactiva.caja_escalada_hover(style="background-color:#FF9800;position:relative;cursor:pointer;" @click="setInfoDolar('Mire a contraluz:','hilo de seguridad. Sostenga el billete a contraluz para ver un hilo de seguridad incrustado verticalmente en las denominaciones de USD 5 en adelante. El hilo está incrustado en una posición diferente en cada denominación y se ilumina de un color diferente cuando se sostiene ante la luz ultravioleta (UV). El hilo de seguridad es visible desde ambos lados del billete.')")
           h5.mb-0 Mire a contraluz
       .col-md-2.mb-4
-        .p-4.text-center.caja__interactiva.caja_escalada_hover(style="background-color:#FF9800;position:relative;cursor:pointer;" @click="setInfoDolar('Marca de agua','sostenga el billete a contraluz para ver una imagen tenue a la derecha del retrato en las denominaciones de USD$5 en adelante. Las marcas de agua son visibles desde ambos lados del billete. En las denominaciones de USD$10 en adelante, la marca de agua coincide con el retrato. El billete de USD$5 de estilo actual tiene dos marcas de agua y ambas son del número 5.')")
+        .p-4.text-center.caja__interactiva.caja_escalada_hover(style="background-color:#FF9800;position:relative;cursor:pointer;" @click="setInfoDolar('Marca de agua','sostenga el billete a contraluz para ver una imagen tenue a la derecha del retrato en las denominaciones de USD 5 en adelante. Las marcas de agua son visibles desde ambos lados del billete. En las denominaciones de USD 10 en adelante, la marca de agua coincide con el retrato. El billete de USD 5 de estilo actual tiene dos marcas de agua y ambas son del número 5.')")
           h5.mb-0 Marca de agua
       .col-md-4
         .p-4.text-center.caja__interactiva.caja_escalada_hover(style="background-color:#FF9800;position:relative;cursor:pointer;" @click="setInfoDolar('Banda de seguridad en 3-D:','el billete de USD 100 presenta una banda de seguridad en 3-D de color azul con imágenes de campanas y números 100. Cuando inclina el billete hacia adelante y atrás, las campanas y los números 100 de la banda se mueven de un lado a otro. Si inclina el billete de un lado a otro, las campanas y los números 100 se mueven hacia arriba y abajo. La banda de seguridad en 3-D está tejida en el papel, no impresa.')")
@@ -1250,7 +1298,7 @@
 
     h4.mt-5.text-center(data-aos="fade-up") Mire con ampliación
 
-    p.mt-4(data-aos="fade-up") #[strong.h5 Microimpresión:] la microimpresión puede ayudar en la autenticación y se ofrece en varios lugares en las denominaciones de $5 en adelante. Estas pequeñas palabras impresas deben ser claras, aunque pueden requerir la ampliación para poder verse. La microimpresión o corresponde a la denominación o contiene frases como “THE UNITED STATES OF AMERICA”, “USA” o “E PLURIBUS UNUM.”
+    p.mt-4(data-aos="fade-up") #[strong.h5 Microimpresión:] la microimpresión puede ayudar en la autenticación y se ofrece en varios lugares en las denominaciones de $5 en adelante. Estas pequeñas palabras impresas deben ser claras, aunque pueden requerir la ampliación para poder verse. La microimpresión o corresponde a la denominación o contiene frases como “#[em THE UNITED STATES OF AMERICA]”, “#[em USA]” o “#[em E PLURIBUS UNUM].”
 
     p.mt-4(data-aos="fade-up") #[strong.h5 Fibras rojas y azules:] el papel de la moneda de los EE. UU. tiene pequeñas fibras de seguridad de color rojo y azul que están incrustadas por todo el billete.
 
@@ -1436,7 +1484,7 @@
 
     h3.mt-5(data-aos="fade-up") Organizacionales
 
-    p.mt-4(data-aos="fade-up") En consecuencia de las políticas estatales, se fijan los lineamientos organizacionales, que cuyo propósito es dar cumplimiento a la normatividad y satisfacer las necesidades de aquellos huéspedes requieren pagar sus gastos de viaje con moneda extranjera.
+    p.mt-4(data-aos="fade-up") En consecuencia de las políticas estatales, se fijan los lineamientos organizacionales, que cuyo propósito es dar cumplimiento a la normatividad y satisfacer las necesidades de aquellos huéspedes que requieren pagar sus gastos de viaje con moneda extranjera.
 
     p.mt-3(data-aos="fade-up") Como vimos, es importante establecer claramente la identidad del huésped, para ello, cada vez que se realice un cambio de moneda o se reciban dólares como parte de pago de la cuenta, el cajero debe anexar una copia del documento de identidad. De igual forma, además de hacer la respectiva comprobación de la validez de los billetes, es importante relacionar la denominación y el serial de cada uno de los recibidos.
 
@@ -1498,7 +1546,7 @@
     div(style="position:relative;z-index:2;background-color:white;")
       .mt-4.p-5.col-md-8.m-auto.content__info_billete.caja_flotante(v-if="item__1_tarjeta" data-aos="zoom-in" style="background-color:#FFF1DB;")
         h4 Chip EMV
-        p.mt-3 La información que hasta hace unos años solo se almacenaba en la banda magnética, hoy se encuentra en un chip que brinda mayor seguridad y durabilidad. Con la aparición de este dispositivo, se abrió una nueva posibilidad de hacer transacciones con “dinero plástico”. Si al lado del chip se encuentran cuatro líneas semicurvas, representando el símbolo Wifi, significa que también podemos realizar el cobro sin contacto, es decir que la tarjeta únicamente la manipula el propietario. A la hora de recibir un pago con tarjeta, el datáfono recibe información básica contenida en el chip y la transmite a la entidad emisora para que valide la transacción, este es un proceso que tarda segundos y por lo que cobra vital importancia el uso del TPV, tal como veremos más adelante.
+        p.mt-3 La información que hasta hace unos años solo se almacenaba en la banda magnética, hoy se encuentra en un chip que brinda mayor seguridad y durabilidad. Con la aparición de este dispositivo, se abrió una nueva posibilidad de hacer transacciones con “dinero plástico”. Si al lado del chip se encuentran cuatro líneas semicurvas, representando el símbolo #[em Wifi], significa que también podemos realizar el cobro sin contacto, es decir que la tarjeta únicamente la manipula el propietario. A la hora de recibir un pago con tarjeta, el datáfono recibe información básica contenida en el chip y la transmite a la entidad emisora para que valide la transacción, este es un proceso que tarda segundos y por lo que cobra vital importancia el uso del TPV, tal como veremos más adelante.
 
       .mt-4.p-5.col-md-8.m-auto.content__info_billete.caja_flotante(v-if="item__2_tarjeta" data-aos="zoom-in" style="background-color:#FFF1DB;")
         h4 Número tarjeta
@@ -1822,17 +1870,17 @@
             img(src="@/assets/curso/tema3/116.svg" style="display:inline;max-width:100px;max-height:80px;")
           h6.mt-2.text-center(data-aos="fade-up") #[strong Links de pago]
         .col-md-3.mb-4
-          figure.text-center.caja_escalada_hover.boton__interactiva(style="background-color:#fff;border-radius:20px;padding:10px 0px 10px 0px;cursor:pointer;position:relative;" @click="setInfoOption('Códigos QR:','los códigos QR (Quick Response Code - código de respuesta rápida) funcionan a través de los teléfonos inteligentes con los cuales se decodifica el código que puede contener un enlace, un sitio web, un correo electrónico o una imagen. Su operación es similar a la de los enlaces, ya que se generan de forma personalizada (cliente: transacción).')")
+          figure.text-center.caja_escalada_hover.boton__interactiva(style="background-color:#fff;border-radius:20px;padding:10px 0px 10px 0px;cursor:pointer;position:relative;" @click="setInfoOption('Códigos QR:','los códigos QR (<em>Quick Response Code</em> - código de respuesta rápida) funcionan a través de los teléfonos inteligentes con los cuales se decodifica el código que puede contener un enlace, un sitio web, un correo electrónico o una imagen. Su operación es similar a la de los enlaces, ya que se generan de forma personalizada (cliente: transacción).')")
             img(src="@/assets/curso/tema3/117.svg" style="display:inline;max-width:100px;max-height:80px;")
           h6.mt-2.text-center(data-aos="fade-up") #[strong Códigos QR]
         .col-md-3.mb-4
-          figure.text-center.caja_escalada_hover.boton__interactiva(style="background-color:#fff;border-radius:20px;padding:10px 0px 10px 0px;cursor:pointer;position:relative;" @click="setInfoOption('Botón de pago:','esta integración no es otra cosa que un enlace que lleva a cliente a la web de pagos y que se personaliza (forma; color; mensaje) dentro de la web de la empresa. Al ser una redirección a la página de pagos, es un sistema que tiende a ser demorado en términos de clics, porque la plataforma hace varias verificaciones.')")
+          figure.text-center.caja_escalada_hover.boton__interactiva(style="background-color:#fff;border-radius:20px;padding:10px 0px 10px 0px;cursor:pointer;position:relative;" @click="setInfoOption('Botón de pago:','esta integración no es otra cosa que un enlace que lleva a cliente a la web de pagos y que se personaliza (forma; color; mensaje) dentro de la <em>web</em> de la empresa. Al ser una redirección a la página de pagos, es un sistema que tiende a ser demorado en términos de clics, porque la plataforma hace varias verificaciones.')")
             img(src="@/assets/curso/tema3/118.svg" style="display:inline;max-width:100px;max-height:80px;")
           h6.mt-2.text-center(data-aos="fade-up") #[strong Botón de pago]
         .col-md-3.mb-4
-          figure.text-center.caja_escalada_hover.boton__interactiva(style="background-color:#fff;border-radius:20px;padding:10px 0px 10px 0px;cursor:pointer;position:relative;" @click="setInfoOption('Integración a página web:','en esta lo que se hace es que la plataforma de pagos genera un código de programación que se integra al contenido de la web en un “frame”. Es decir, que la pasarela de pagos funciona dentro de la página web sin salir de ella, por lo que minimiza clics y mejora la experiencia de usuario, pero además da una sensación de pago más segura. Para esto hay que cumplir requisitos adicionales como tener certificados SSL y certificados de seguridad web para el procesamiento de pagos.')")
+          figure.text-center.caja_escalada_hover.boton__interactiva(style="background-color:#fff;border-radius:20px;padding:10px 0px 10px 0px;cursor:pointer;position:relative;" @click="setInfoOption('Integración a página web:','en esta lo que se hace es que la plataforma de pagos genera un código de programación que se integra al contenido de la web en un “<em>frame</em>”. Es decir, que la pasarela de pagos funciona dentro de la página <em>web</em> sin salir de ella, por lo que minimiza clics y mejora la experiencia de usuario, pero además da una sensación de pago más segura. Para esto hay que cumplir requisitos adicionales como tener certificados SSL y certificados de seguridad web para el procesamiento de pagos.')")
             img(src="@/assets/curso/tema3/119.svg" style="display:inline;max-width:100px;max-height:80px;")
-          h6.mt-2.text-center(data-aos="fade-up") #[strong Integración a página web]
+          h6.mt-2.text-center(data-aos="fade-up") #[strong Integración a página #[em web]]
 
       .mt-4.p-5.caja__mostrar(style="background-color:#fff;border-radius:20px;")
         div(data-aos="fade-up")
@@ -1853,7 +1901,7 @@
           | La página web del comercio debe ser una página segura certificada por una empresa idónea y reconocida.
         li(data-aos="fade-up")
           i.fas.fa-check(style="color:#FF9800;")
-          | La información del tarjetahabiente debe viajar por un canal dedicado (VPN) o red privada virtual (Virtual Private Network).
+          | La información del tarjetahabiente debe viajar por un canal dedicado (VPN) o red privada virtual (#[em Virtual Private Network]).
         li(data-aos="fade-up")
           i.fas.fa-check(style="color:#FF9800;")
           | La información debe ser encriptada con software de alto nivel y reconocimiento, la norma PCI DSS exige la utilización de Triple DES o AES.
@@ -1878,7 +1926,7 @@
     br
     br
     .titulo-segundo.mt-5
-      h2#t_3_5 3.5 Cuentas compañía (Bill to)
+      h2#t_3_5 3.5 Cuentas compañía (#[em Bill to])
 
     p(data-aos="fade-up") Son una forma de pago característica de los hoteles y se configura cuando el departamento de ventas y mercadeo, en desarrollo de su función comercial, establece relaciones comerciales con empresas y dentro de esas negociaciones, fija las condiciones de estas. Entre ellas las tarifas y las normas de crédito aplicables.
 
@@ -1948,7 +1996,7 @@
           figure.text-center
             img.image_floating(src="@/assets/curso/tema3/125.svg" style="display:inline;max-width:100px;margin-top:-3rem;" data-aos="fade-up")
           .p-5
-            h4(data-aos="fade-up") En el registro (Check in)
+            h4(data-aos="fade-up") En el registro (#[em Check in])
             ol.lista-ol--cuadro.mt-5
               li(data-aos="fade-up")
                 .lista-ol--cuadro__vineta(style="background-color: #111E61;")
@@ -1965,7 +2013,7 @@
               li.mt-3(data-aos="fade-up")
                 .lista-ol--cuadro__vineta(style="background-color: #111E61;")
                   span d
-                | Diligencie el registro y verifique que el “routing” sea correcto.
+                | Diligencie el registro y verifique que el “#[em routing]” sea correcto.
               li.mt-3(data-aos="fade-up")
                 .lista-ol--cuadro__vineta(style="background-color: #111E61;")
                   span e
@@ -2802,7 +2850,7 @@ export default {
   width: 3px
   background-color: #ff9802
   top: 33px
-  right: 41%
+  right: 45%
   z-index: 1
   height: 56vh
 .item__image div
@@ -2864,4 +2912,17 @@ export default {
   z-index: 9
 .tarjeta--azul
   background-color: #DEE4F0 !important
+.bullet
+  padding: 1rem
+  border-radius: 50%
+  box-shadow: 0px 0px 10px #c1c1c1
+  border: 3px white solid
+.bullet_rojo:before,.bullet_rojo:after,.img-infografica__item_raya.bullet_rojo
+  background-color: #B01A29 !important
+.bullet_amarillo:before,.bullet_amarillo:after,.img-infografica__item_raya.bullet_amarillo
+  background-color: #E8A817 !important
+.bullet_verde:after,.bullet_verde:before,.img-infografica__item_raya.bullet_verde
+  background-color: #4A762E !important
+.bullet_morado:before,.bullet_morado:after,.img-infografica__item_raya.bullet_morado
+  background-color: #642A95 !important
 </style>

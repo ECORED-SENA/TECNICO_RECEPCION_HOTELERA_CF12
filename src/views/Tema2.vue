@@ -42,7 +42,7 @@
           img.image_floating(src='@/assets/curso/tema2/4.svg' alt='' style="z-index:1;")
           .tarjeta.caja_flotante_rosada(style="background-color:#FFF1DB;border-radius:0px;" data-aos="zoom-in")
             .text-white.p-5
-              h3.mt-4(data-aos="fade-up") Anunciar #[em Check out] a las áreas
+              h3.mt-4(data-aos="fade-up") Anunciar #[em(style="color:#12263F !important") Check out] a las áreas
               p(data-aos="fade-up") Avisar a las demás áreas del hotel que la habitación va saliendo, para que los centros de facturación cierren las cuentas que tengan abiertas y el departamento encargado verifique los últimos consumos de minibar.
       .col-md-4.mb-3
         .tarjeta-avatar.tarjeta__tema2
@@ -57,7 +57,7 @@
           .tarjeta.caja_flotante_rosada(style="background-color:#FFF1DB;border-radius:0px;" data-aos="zoom-in")
             .text-white.p-5
               h3.mt-4(data-aos="fade-up") Pre-cuenta
-              p(data-aos="fade-up") Ya verificados los folios y los cargos, se muestra al huésped esta información para que él la valide. Es importante que en los casos de CxC o cuenta compañía que se encuentran respaldados por un #[em Bill to], la cuenta que va para la empresa quede firmada. 
+              p(data-aos="fade-up") Ya verificados los folios y los cargos, se muestra al huésped esta información para que él la valide. Es importante que en los casos de CxC o cuenta compañía que se encuentran respaldados por un #[em(style="color:#12263F !important") Bill to], la cuenta que va para la empresa quede firmada. 
 
     .col-md-4.m-auto.mt-4
         .tarjeta-avatar.tarjeta__tema2
@@ -75,8 +75,8 @@
         .col
           .row.justify-content-between.align-items-center
             .col.mb-3.mb-sm-0
-              h3.mt-3.text-white(data-aos="fade-up") Ejemplo de procedimiento técnico en PMS.
-              p.mt-3(style="color: #12263F !important;") En la mayoría de los sistemas PMS, este proceso es bastante intuitivo, lo que ayudará a minimizar los tiempos en el proceso. A continuación, se puede ver un video con el proceso de Check out en un sistema de gestión de propiedad:
+              h3.mt-3.text-white(data-aos="fade-up" style="color: #12263F !important;") Ejemplo de procedimiento técnico en PMS.
+              p.mt-3(style="color: #12263F !important;") En la mayoría de los sistemas PMS, este proceso es bastante intuitivo, lo que ayudará a minimizar los tiempos en el proceso. A continuación, se puede ver un video con el proceso de #[em(style="color: #12263F !important;") Check out] en un sistema de gestión de propiedad:
             .col-sm-auto
               a.boton.boton--b.color-acento-botones(href="https://www.youtube.com/watch?v=QTEzACI8q1g" target="_blank")
                 span Ir a la web

@@ -321,7 +321,7 @@ export default {
     {
       termino: 'Norma PCI DSS',
       significado:
-        ' Payment Card Industry Data Security Standards recopila los estándares y políticas que se deben implementar para proteger las transacciones con tarjeta de crédito, en lo referente a <em>software</em>, redes y almacenamiento de información. ',
+        ' <em>Payment Card Industry Data Security Standards</em> recopila los estándares y políticas que se deben implementar para proteger las transacciones con tarjeta de crédito, en lo referente a <em>software</em>, redes y almacenamiento de información. ',
     },
     {
       termino: 'VPN',
