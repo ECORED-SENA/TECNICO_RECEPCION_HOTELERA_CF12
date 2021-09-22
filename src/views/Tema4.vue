@@ -76,14 +76,11 @@
 
       ul.lista-ul.mt-4
         li(data-aos="fade-up")
-          i.fas.fa-check(style="color:#FF9800;")
-          | Organizar las facturas consecutivamente o por forma de pago
+          p #[i.fas.fa-check(style="color:#FF9800;")] Organizar las facturas consecutivamente o por forma de pago
         li(data-aos="fade-up")
-          i.fas.fa-check(style="color:#FF9800;")
-          | En los pagos de tarjeta de crédito, es útil grapar los cupones de pago a las facturas, este simple proceso ayudará a verificar si el ingreso de información en el PMS fue correcto al momento del #[em Check out].
+          p #[i.fas.fa-check(style="color:#FF9800;")] En los pagos de tarjeta de crédito, es útil grapar los cupones de pago a las facturas, este simple proceso ayudará a verificar si el ingreso de información en el PMS fue correcto al momento del #[em Check out].
         li(data-aos="fade-up")
-          i.fas.fa-check(style="color:#FF9800;")
-          | Los documentos diferentes a facturas, como #[em Paid Outs], cambios de moneda y otros que afecten el movimiento, deben ser organizados aparte, igualmente por consecutivo o manteniendo un orden que permita identificar que no hay ausencia de soportes.
+          p #[i.fas.fa-check(style="color:#FF9800;")] Los documentos diferentes a facturas, como #[em Paid Outs], cambios de moneda y otros que afecten el movimiento, deben ser organizados aparte, igualmente por consecutivo o manteniendo un orden que permita identificar que no hay ausencia de soportes.
 
     p.mt-5(data-aos="fade-up") De esta forma, al realizar una revisión del movimiento, se podrá contrastar la información contra la documentación física y fácilmente ubicar posibles errores.
 

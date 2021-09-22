@@ -1071,7 +1071,7 @@
                 img.image_floating(src="@/assets/curso/tema3/74.svg")
             .col-md-6
               h4 Billete de mil pesos
-              p.mt-3 Este billete es una edición conmemorativa de Jorge Eliécer Gaitán, que salió a circulación el 17 de noviembre de 2006, Este billete tiene fecha de edición 1° de noviembre de 2005. Estos billetes tienen el mismo diseño e idénticas características generales y dispositivos de seguridad mencionados en otras denominaciones.
+              p.mt-3 Este billete es una edición conmemorativa de Jorge Eliécer Gaitán, que salió a circulación el 17 de noviembre de 2006. Este billete tiene fecha de edición 1° de noviembre de 2005. Estos billetes tienen el mismo diseño e idénticas características generales y dispositivos de seguridad mencionados en otras denominaciones.
     br
     .row.mt-5
       .col-md-6(style="place-self:center")
@@ -1265,7 +1265,7 @@
           img.image_floating(src="@/assets/curso/tema3/87.svg" data-aos="fade-left" style="display:inline;max-width:200px")
 
     h3.mt-5(data-aos="fade-up") Dólares
-    p.mt-3(data-aos="fade-up") La Junta de la Reserva Federal de los EE. UU. emite billetes de USD 1, USD 2, USD 5, USD 10, USD 20, USD$ 0 y USD 100. El Gobierno de los EE. UU. rediseña periódicamente los billetes de la Reserva Federal para que sean más fáciles de usar, pero más difíciles de falsificar. El estilo actual de billetes se muestra a continuación:
+    p.mt-3(data-aos="fade-up") La Junta de la Reserva Federal de los EE. UU. emite billetes de USD 1, USD 2, USD 5, USD 10, USD 20, USD 0 y USD 100. El Gobierno de los EE. UU. rediseña periódicamente los billetes de la Reserva Federal para que sean más fáciles de usar, pero más difíciles de falsificar. El estilo actual de billetes se muestra a continuación:
 
     .col-md-6.m-auto
       h4.mt-5.text-center(data-aos="fade-up") Elementos de seguridad de billetes
@@ -1455,8 +1455,8 @@
     h3.mt-5(data-aos="fade-up") Políticas
     p.mt-3(data-aos="fade-up") Según la Real Academia de la Lengua Española – RAE, una política es el conjunto de orientaciones o directrices que rigen la actuación de una persona o entidad en un asunto o campo determinado. Por ello, abordaremos de manera general lo estipulado por la ley colombiana para el manejo de divisas y los lineamientos operativos y administrativos de los establecimientos de alojamiento para el mismo objetivo.
 
-    AcordionA.mt-5(tipo="a" clase-tarjeta="tarjeta tarjeta--azul")
-      .row(titulo="Procedimientos cambiarios")
+    AcordionA.mt-5(tipo="a" clase-tarjeta="tarjeta tarjeta__custom")
+      .row.primero(titulo="Procedimientos cambiarios")
         p El conjunto de normas que regulan los cambios internacionales se conoce como régimen cambiario, y este abarca todas las transacciones que impliquen pago en moneda extranjera o manejo de divisas, tanto en ámbito estatal como privado, tal como veremos ahora.
 
       .row(titulo="Estatales")
@@ -2130,6 +2130,12 @@ export default {
     $('.boton__interactiva').click(function() {
       $('.boton__interactiva').removeClass('boton__activa')
       $(this).addClass('boton__activa')
+    })
+    $(document).hover(function() {
+      $('.tarjeta__custom').click(function() {
+        $('.tarjeta__custom').removeClass('acordion_activo')
+        $(this).addClass('acordion_activo')
+      })
     })
   },
   updated() {
@@ -2910,7 +2916,9 @@ export default {
   transform: translate(-50%, -50%)
   left: 50%
   z-index: 9
-.tarjeta--azul
+.tarjeta__custom
+  background-color: #FFF1DB
+.acordion_activo
   background-color: #DEE4F0 !important
 .bullet
   padding: 1rem

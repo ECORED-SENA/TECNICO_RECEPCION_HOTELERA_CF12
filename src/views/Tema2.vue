@@ -27,7 +27,7 @@
           .tarjeta.caja_flotante_rosada(style="background-color:#FFF1DB;border-radius:0px;" data-aos="zoom-in")
             .text-white.p-5
               h3.mt-4(data-aos="fade-up") Recuperar las llaves
-              p(data-aos="fade-up") De una forma cortés se deben solicitar la llave y ubicarla en el respectivo Rack. Si la solicitud se recibe telefónicamente se debe ofrecer ayuda para bajar el equipaje y en caso de respuesta positiva, informar al botones.
+              p(data-aos="fade-up") De una forma cortés se deben solicitar la llave y ubicarla en el respectivo #[em(style="color:initial !important;") Rack]. Si la solicitud se recibe telefónicamente se debe ofrecer ayuda para bajar el equipaje y en caso de respuesta positiva, informar al botones.
       .col-md-4.mb-3
         .tarjeta-avatar.tarjeta__tema2
           img.image_floating(src='@/assets/curso/tema2/3.svg' alt='' style="z-index:1;")

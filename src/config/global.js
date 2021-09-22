@@ -2,7 +2,7 @@ export default {
   global: {
     componenteFormativo: 'Procedimientos de pago',
     descripcionCurso:
-      'De la misma forma que el cliente ingresa al hotel, debe salir de él al final de su estancia. En esta unidad se revisarán los conceptos para llevar a cabo con eficiencia un Check out que es el último paso de la estancia del huésped y se tiene la responsabilidad de cerrar la estadía en forma impecable. Cualquier error en este momento puede dar al traste con toda la experiencia del usuario en el hotel.',
+      'De la misma forma que el cliente ingresa al hotel, debe salir de él al final de su estancia. En esta unidad se revisarán los conceptos para llevar a cabo con eficiencia un <em>Check out</em> que es el último paso de la estancia del huésped y se tiene la responsabilidad de cerrar la estadía en forma impecable. Cualquier error en este momento puede dar al traste con toda la experiencia del usuario en el hotel.',
     imagenBannerPrincipal: require('@/assets/curso/banner-principal.svg'),
     fondoBannerPrincipal: require('@/assets/curso/fondo-banner-principal.png'),
   },
