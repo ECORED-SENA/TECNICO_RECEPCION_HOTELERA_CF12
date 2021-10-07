@@ -1888,6 +1888,10 @@
 
     h3.mt-5(data-aos="fade-up") Procedimiento de confirmación y manejo
 
+    figure.mt-4
+      .video
+        iframe(width="560" height="315" src="https://www.youtube.com/embed/zkAIxjlqmV4" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+
     .mt-5.p-5(style="background-color:#FFF1DB")
       .row
         .col-md-6(style="place-self:center")
