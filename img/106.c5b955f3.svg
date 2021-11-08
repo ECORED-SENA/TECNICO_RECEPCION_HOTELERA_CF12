@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1046" height="1001" viewBox="0 0 1046 1001">
+  <defs>
+    <filter id="Rectángulo_5732" x="0" y="0" width="1046" height="1001" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_56297" data-name="Grupo 56297" transform="translate(-253 -14143)">
+    <g transform="matrix(1, 0, 0, 1, 253, 14143)" filter="url(#Rectángulo_5732)">
+      <rect id="Rectángulo_5732-2" data-name="Rectángulo 5732" width="1028" height="983" rx="24" transform="translate(9 6)" fill="#fffcf7"/>
+    </g>
+    <text id="RELACIÓN_MONEDA_EXTRANJERA" data-name="RELACIÓN MONEDA EXTRANJERA" transform="translate(472 14228)" fill="#12263f" font-size="20" font-family="Roboto-Black, Roboto" font-weight="800"><tspan x="0" y="0">RELACIÓN MONEDA EXTRANJERA</tspan></text>
+    <text id="NOMBRE_DEL_HOTEL" data-name="NOMBRE DEL HOTEL" transform="translate(472 14266)" fill="#12263f" font-size="20" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">NOMBRE DEL HOTEL</tspan></text>
+    <g id="Rectángulo_5733" data-name="Rectángulo 5733" transform="translate(1034 14215)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="212" height="76" rx="9" stroke="none"/>
+      <rect x="0.5" y="0.5" width="211" height="75" rx="8.5" fill="none"/>
+    </g>
+    <text id="NIT" transform="translate(472 14298)" fill="#12263f" font-size="20" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">NIT</tspan></text>
+    <text id="No." transform="translate(1056 14242)" fill="#12263f" font-size="20" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">No.</tspan></text>
+    <text id="FECHA" transform="translate(298 14364)" fill="#12263f" font-size="20" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">FECHA</tspan></text>
+    <g id="Rectángulo_5734" data-name="Rectángulo 5734" transform="translate(448 14329)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="422" height="40" rx="20" stroke="none"/>
+      <rect x="0.5" y="0.5" width="421" height="39" rx="19.5" fill="none"/>
+    </g>
+    <text id="HUéSPED" transform="translate(298 14433)" fill="#12263f" font-size="20" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">HUÉSPED</tspan></text>
+    <g id="Rectángulo_5735" data-name="Rectángulo 5735" transform="translate(448 14404)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="422" height="42" rx="21" stroke="none"/>
+      <rect x="0.5" y="0.5" width="421" height="41" rx="20.5" fill="none"/>
+    </g>
+    <text id="No_DOCUMENTO" data-name="No
+DOCUMENTO" transform="translate(298 14500)" fill="#12263f" font-size="20" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">No</tspan><tspan x="0" y="27">DOCUMENTO</tspan></text>
+    <g id="Rectángulo_5736" data-name="Rectángulo 5736" transform="translate(448 14483)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="422" height="43" rx="21.5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="421" height="42" rx="21" fill="none"/>
+    </g>
+    <text id="HABITACIóN" transform="translate(893 14441)" fill="#12263f" font-size="20" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">HABITACIÓN</tspan></text>
+    <g id="Rectángulo_5737" data-name="Rectángulo 5737" transform="translate(1034 14404)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="212" height="42" rx="21" stroke="none"/>
+      <rect x="0.5" y="0.5" width="211" height="41" rx="20.5" fill="none"/>
+    </g>
+    <text id="TIPO" transform="translate(965 14514)" fill="#12263f" font-size="20" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">TIPO</tspan></text>
+    <g id="Rectángulo_5738" data-name="Rectángulo 5738" transform="translate(1034 14483)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="212" height="43" rx="21.5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="211" height="42" rx="21" fill="none"/>
+    </g>
+    <g id="Rectángulo_5739" data-name="Rectángulo 5739" transform="translate(298 14581)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="948" height="384" rx="18" stroke="none"/>
+      <rect x="0.5" y="0.5" width="947" height="383" rx="17.5" fill="none"/>
+    </g>
+    <path id="Trazado_102553" data-name="Trazado 102553" d="M-7032.245,2906v384" transform="translate(7569 11675)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Trazado_102554" data-name="Trazado 102554" d="M-7032.245,2906v384" transform="translate(7784 11675)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Trazado_102555" data-name="Trazado 102555" d="M-7032.245,2906v384" transform="translate(7977 11675)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Trazado_102556" data-name="Trazado 102556" d="M-7032.245,2906v384" transform="translate(8126 11675)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="TIPO_DE_DIVISA" data-name="TIPO DE DIVISA" transform="translate(342 14625)" fill="#12263f" font-size="20" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">TIPO DE DIVISA</tspan></text>
+    <text id="DENOMINACIón" transform="translate(575 14625)" fill="#12263f" font-size="20" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">DENOMINACIÓN</tspan></text>
+    <text id="SERIE" transform="translate(824 14625)" fill="#12263f" font-size="20" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">SERIE</tspan></text>
+    <text id="CAMBIO" transform="translate(983 14625)" fill="#12263f" font-size="20" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">CAMBIO</tspan></text>
+    <text id="TOTAL" transform="translate(1148 14625)" fill="#12263f" font-size="20" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">TOTAL</tspan></text>
+    <path id="Trazado_102557" data-name="Trazado 102557" d="M-7271,2976.255h946.115" transform="translate(7569 11675)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Trazado_102558" data-name="Trazado 102558" d="M-7271,2976.255h946.115" transform="translate(7569 11726)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Trazado_102559" data-name="Trazado 102559" d="M-7271,2976.255h946.115" transform="translate(7569 11777)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Trazado_102560" data-name="Trazado 102560" d="M-7271,2976.255h946.115" transform="translate(7569 11828)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Trazado_102561" data-name="Trazado 102561" d="M-7271,2976.255h946.115" transform="translate(7569 11879)" fill="none" stroke="#707070" stroke-width="1"/>
+    <path id="Trazado_102562" data-name="Trazado 102562" d="M-7271,2976.255h946.115" transform="translate(7569 11930)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="RESPONSABLE" transform="translate(298 15049)" fill="#12263f" font-size="20" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">RESPONSABLE</tspan></text>
+    <g id="Rectángulo_5740" data-name="Rectángulo 5740" transform="translate(472 15022)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="352" height="40" rx="20" stroke="none"/>
+      <rect x="0.5" y="0.5" width="351" height="39" rx="19.5" fill="none"/>
+    </g>
+    <text id="FIRMA" transform="translate(893 15049)" fill="#12263f" font-size="20" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">FIRMA</tspan></text>
+    <path id="Trazado_102563" data-name="Trazado 102563" d="M-6576.37,3387h249.292" transform="translate(7569 11675)" fill="none" stroke="#707070" stroke-width="1"/>
+  </g>
+</svg>
