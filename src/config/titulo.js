@@ -1,1 +1,1 @@
-module.exports = 'Procedimientos de pago'
+module.exports = 'Formas de pago'
